@@ -580,7 +580,7 @@ track_buffer: 35        # 适度增大跟踪缓冲区，平衡ID稳定性和准�
 - **CUDA编译配置**：
   针对RTX3060优化的固定CUDA参数，支持compute_86架构。
   
-- **TensorRTU优化**：
+- **TensorRT优化**：
 
   专门的GPU推理加速。
 
