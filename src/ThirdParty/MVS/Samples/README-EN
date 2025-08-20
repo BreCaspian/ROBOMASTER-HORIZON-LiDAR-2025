@@ -1,0 +1,229 @@
+Machine Vision Camera Linux SDK User Manual
+===========================================================================
+Version: 4.3.0
+
+Camera supported : GigE and USB3 Camera
+
+OS supported: ubuntu 14.04 (32/64 bits), ubuntu 16.04 (32/64 bits), 
+              centos7 (32/64 bits), redhat (64 bits)
+===========================================================================
+
+Runtime Configuration
+===========================================================================
+Before make any samples,please check the environment variables,LD_LIBRARY_PATH must contain SDK path,
+and MVCAM_COMMON_RUNENV is set to "/opt/MVS/lib"; if not, please cd to the install directory which \
+contain the setup.sh, and source the set_env_path.sh shell.
+===========================================================================
+
+The MVS installation path is/opt/MVS, and the directory structure is as follows:
+	MVS
+	|-bin			：The executable file of the sample program
+	|-doc			：Secondary Development Description Document
+	|-driver		：Camera drive installation
+	|-include		：Header file
+	|-lib			：Lib file
+	|-logserver		：Log Service
+	|-MVFG			：Entity Acquisition Card Files and Sample Programs
+	|-Samples		：Sample program
+===========================================================================
+
+Program demostration(C/C++console program and Qt interface program)
+===========================================================================
+C/C++Console Program
+===========================================================================
+ChunkData: Chunk data sample.
+1. Enumerate device, select device and create handle, and then open device
+2. Enable Chunk Mode, set Chunk Selectors, and set Chunk Enable on
+3. Set trigger mode as off
+4. Start grabbing, open a thread to get chunk data
+5. Input enter to stop grabbing.
+
+===========================================================================
+Display: Image dispaly sample
+The Created image window is not support strech.
+1. Create image window by using xlib library;
+2. Enumerate device, select device and create handle, and then open device;
+3. Start grabbing, call dispaly function to input window handle;
+4. Input enter to stop grabbing.
+
+===========================================================================
+ForceIP: Set forceip
+1. Enumerate device, select device and create handle;
+2. Set forceip;
+3. Input enter to stop grabbing.
+
+===========================================================================
+ForceIP: Set forceip extension (for third-party cameras)
+1. Enumerate device, select device and create handle;
+2. Set forceip;
+3. Input enter to stop grabbing.
+
+===========================================================================
+Grab_ImageCallback: Grabbing image by callback
+1. Enumerate device, select device and create handle, and then open device;
+2. Set trigger mode as off;
+3. Start grabbing;
+4. If image data is grabbed, ImageCallBackEx will be called;
+5. Input enter to stop grabbing.
+
+===========================================================================
+GrabImage: Actively grab image
+1. Enumerate device, select device and create handle, and then open device;
+2. Set trigger mode as off;
+3. Start grabbing, open a thread to grab image data;
+4. If image data is grabbed, MV_OK will be returned by MV_CC_GetOneFrameTimeout;
+5. Input enter to stop grabbing.
+
+===========================================================================
+GrabMultipleCamera: Multiple camera grabbing
+1. Enumerate device, select device and create handle, and then open device;
+2. Set trigger mode as off;
+3. Start grabbing, open a thread to grab image data;
+4. If image data is grabbed, MV_OK will be returned by MV_CC_GetOneFrameTimeout;
+5. Input enter to stop grabbing.
+
+===========================================================================
+Grab_ Asynchronous: Asynchronous image acquisition
+1. Enumerate device, select device and create handle, and then open device
+2. Set trigger mode as off
+3. Register image callback, start grabbing, open a work thread to process image data
+4. If there is image data, ImageCallBackEx will be called to place the image in the queue, and the work thread will get the image from the queue
+5. Input enter to stop grabbing.
+
+===========================================================================
+GrabImage_High Performance: Actively grab Images
+1. Enumerate device, select device and create handle, and then open device
+2. Set trigger mode as off
+3. Start grabbing, open a thread to grab image data
+4. If there is image data, MV_CC_GetImageBuffer will return MV_ OK, and needs to call MV_CC_FreeImageBuffer at the same time
+5. Input enter to stop grabbing.
+
+===========================================================================
+ImageProcess: Image processing (Save image and pixel format conversion)
+1. Enumerate device, select device and create handle, and then open device;
+2. Start grabbing, if image data is grabbed, MV_OK will be returned by MV_CC_GetOneFrameTimeout;
+3. Select case 0, 1 or 2 to do different image processing;
+4. Input enter to stop grabbing.
+
+===========================================================================
+ReconnectDemo: Re-connect sample
+1. Open a thread to re-connect camera, which contains enumeration, 
+   create handle, open device, register exception callback and other functions
+2. If there is a camera lost connect by exception, re-enumrate and connect the 0th camera;
+3. Input enter to stop grabbing.
+
+===========================================================================
+SetIO: Set IO
+1. Enumerate device, select device and create handle, and then open device;
+2. Get LineSelector, and set LineSelector;
+3. Get LineMode, and set LineMode;
+4. Input enter to stop grabbing.
+
+===========================================================================
+SetParam: Set parameters
+1. Enumerate device, select device and create handle, and then open device;
+2. Set or get int type parameters;
+3. Set or get float type parameters;
+4. Set or get enum type parameters;
+5. Set or get bool type parameters;
+6. Set or get string type parameters;
+7. Input enter to stop grabbing.
+
+===========================================================================
+Trigger_Image: Grabbing by trigger
+1. Enumerate device, select device and create handle, and then open device;
+2. Set trigger mode as on, and trigger source as software;
+3. Start grabbing, open a thread to send trigger command and get image data;
+4. Input enter to stop grabbing.
+
+===========================================================================
+Trigger_ImageCallback: Grabbing by trigger in callback
+1. Enumerate device, select device and create handle, and then open device;
+2. Set trigger mode as on, and trigger source as software;
+3. Start grabbing, open a thread to send trigger command;
+4. If image data is grabbed, ImageCallBackEx will be called;
+5. Input enter to stop grabbing.
+
+===========================================================================
+ConnectSpecCamera: Connect camera without enumerating (Remote access)
+1. Set camera IP and NIC IP;
+2. Create handle and connect camera;
+3. Start grabbing.
+
+===========================================================================
+Events: Camera event
+1. Enumerate device, select device and create handle, and then open device;
+2. Enabled Event;
+3. Register Event Callback (Optional single, multiple or full events) 
+4. Start grabbing, enter callback once camera event happens.
+
+===========================================================================
+MultiCast: Multicast grabbing
+1. Enumerate device, select device and create handle, and then open device;
+2. Set control or monitor mode;
+3. Input IP and port of multicast group;
+4. Start grabbing (Noted that start grabbing on monitor requires the grabbing on control side).
+
+===========================================================================
+ParametrizeCamera_FileAccess: 
+1. Enumerate device, select device and create handle, and then open device;
+2. Execute a thread, read camera configure file by FileAccess;
+3. Execute a thread, write camera configure file into camera by FileAccess.
+
+===========================================================================
+ParametrizeCamera_LoadAndSave:
+1. Enumerate device, select device and create handle, and then open device;
+2. Export camera feature into a file;
+3. Import camera feature from above file.
+
+ ===========================================================================
+ HighBandwidthDecode：Lossless decoding
+1. Enumerate devices, select devices, create handles, and open devices
+2. Obtain a frame of image data
+3. Call the lossless decoding interface to convert HB format image data into normal image data
+ 
+===========================================================================
+InterfaceDemo: Interface operation example
+1. Enumerate interfaces
+2. Select a interface, create a handle and then open the interface
+3. Set the interface properties
+4. Close and destroy the interface
+===========================================================================
+InterfaceAndDeviceDemo: Example of camera operation under acquisition card
+1. Enumerate devices
+2. Select the device， create a handle and then open the device
+3. Set trigger mode as off
+4. Start streaming and start threading to obtain image data
+5. If there is image data, MV_ CC_ GetImageBuffer will return MV_OK, and needs to call MV_CC_FreeImageBuffer at the same time
+6. Input enter to stop grabbing.
+===========================================================================
+ 
+Qt interface program
+===========================================================================
+BasicDemo：Sample interface program for basic camera operation
+1. First, click the "Find Device" button to enumerate devices
+2. Select a device in the device list and click the" "Open Device" "button to open it."
+3. Click the "Start Acquisition" button to perform image acquisition and display. Here, you can select "Continuous Mode" or "Trigger Mode". If you select "Trigger Mode" and it is in "Soft Trigger" mode, click the "Soft Trigger Once" button to perform single frame display
+4. (Optional) By clicking the "Obtain Parameters" and "Set Parameters" buttons, you can obtain and set the three parameters of exposure, gain, and frame rate
+
+===========================================================================
+BasicDemoByGenTL：Sample program for acquisition card interface
+1. Click the "Enumerate Interface" button and select a. cti file to enumerate the collection cards
+2. Click the "Enumerate Devices" button to enumerate devices
+3. Select a device in the device list and click the "Open Device" button to open it
+4. Click the "Start Acquisition" button to perform image acquisition and display. Here, you can select "Continuous Mode" or "Trigger Mode". If you select "Trigger Mode" and it is in "Soft Trigger" mode, click the "Soft Trigger Once" button to perform single frame display
+
+===========================================================================
+BasicDemoLineScan：Interface example program for basic operation of linear array camera
+1. First, click the "Find Device" button to enumerate devices
+2. Select a device in the device list and click the" "Open Device" "button to open it."
+3. Select "Trigger Option", "Trigger Switch", and "Trigger Source", and click the "Start Acquisition" button to display image acquisition. If the "Trigger Switch" is selected as on and in the "Soft Trigger" mode, click the "Execute Once Trigger" button to display a single frame
+4. Click different image save buttons to save the corresponding format of the image to the local location
+5. (Optional) The options below the parameters can be obtained and set by clicking the "Parameter Acquisition" and "Parameter Setting" buttons
+
+===========================================================================
+InterfaceBasicDemo: Sample interface program for basic operation
+1. Select a type from the "IFType" list and click the "Enum Interfaces" button to enumerate
+2. Select a interface from the list of interfaces and click the "Open Interface" button to open it
+3. Click on the "Feature configure" button to set the relevant attributes of the interface
+4. Click "Close Interface" to close the current interface

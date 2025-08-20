@@ -1,0 +1,1 @@
+cmd_/opt/MVS/driver/pcie/TransportLayer/gev/gevframegrabber.ko := ld -r  -m elf_x86_64 -z noexecstack   --build-id=sha1  -T scripts/module.lds -o /opt/MVS/driver/pcie/TransportLayer/gev/gevframegrabber.ko /opt/MVS/driver/pcie/TransportLayer/gev/gevframegrabber.o /opt/MVS/driver/pcie/TransportLayer/gev/gevframegrabber.mod.o;  true

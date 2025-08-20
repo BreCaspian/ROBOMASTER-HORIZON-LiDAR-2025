@@ -1,0 +1,391 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="custom-style.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+	<div style="overflow: hidden;">
+		<div style="height: 57px;min-width: 1039px;background-size: auto 100%;background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABwgAAAABCAYAAADKO/rAAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAABRSURBVFhH7dUxCoBADEXB5LK5/w1iIaLIrsgWNs50Sf/4WVUd8HOZGd1nCqMbGNMPrNMPrJv1cvz0A3OjfuwPvDPrxf7A7t7IlX7gmX74VsQGguw4S6+UnSYAAAAASUVORK5CYII=');">
+			<img src="titleleft.png" style="float: left;"/>
+			<img src="titleright.png" alt="" style="float: right;" />
+		</div>
+	</div>
+<!-- 制作者 Doxygen 1.8.15 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>法律声明</span></a></li>
+      <li><a href="_xE9_xA6_x96_xE9_xA1_xB5.html"><span>首页</span></a></li>
+      <li><a href="_xE6_x9B_xB4_xE6_x96_xB0_xE8_xAE_xB0_xE5_xBD_x95.html"><span>更新记录</span></a></li>
+      <li><a href="_xE7_x8E_xAF_xE5_xA2_x83_xE9_x85_x8D_xE7_xBD_xAE.html"><span>环境配置</span></a></li>
+      <li><a href="_xE7_xBC_x96_xE7_xA8_x8B_xE5_xBC_x95_xE5_xAF_xBC.html"><span>编程引导</span></a></li>
+      <li><a href="modules.html"><span>接口说明</span></a></li>
+      <li><a href="annotated.html"><span>结构体定义</span></a></li>
+      <li><a href="_xE7_x9B_xB8_xE6_x9C_xBA_xE5_x8F_x82_xE6_x95_xB0_xE8_x8A_x82_xE7_x82_xB9_xE8_xA1_xA8.html"><span>相机参数节点表</span></a></li>
+      <li><a href="examples.html"><span>示例程序</span></a></li>
+      <li><a href="_xE9_x94_x99_xE8_xAF_xAF_xE7_xA0_x81.html"><span>状态码</span></a></li>
+      <li><a href="_xE5_xB8_xB8_xE8_xA7_x81_xE9_x97_xAE_xE9_xA2_x98.html"><span>常见问题</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="PageDoc"><div class="contents">
+<div class="textblock"><div class="header" style="margin-left:-12px;margin-top:-10px;margin-right:-8px;"> <div class="headertitle"> <div class="title">状态码</div> </div> </div> <div class="mainparams"> <h2>一、SDK内部自定义状态码</h2>
+</div><div class="mainparams"></div><div class="mainparams"></div> <div id="hikvision"> <table width="80%" style="margin: 0 0 0 40px;">
+<tr>
+<th colspan="3" style="text-align:left;">正确码定义  </th></tr>
+<tr>
+<th style="text-align:left;" width="30%">返回类型 </th><th style="text-align:left;" width="20%">类型值 </th><th style="text-align:left;" width="30%">类型信息描述  </th></tr>
+<tr>
+<td>MV_OK </td><td>0x00000000 </td><td>成功，无错误  </td></tr>
+</table>
+</div><div id="hikvision"></div><div id="hikvision">&#160;</div><div id="hikvision"> <table width="80%" style="margin: 0 0 0 40px;">
+<tr>
+<th colspan="3" style="text-align:left;">通用错误码定义：范围0x80000000-0x800000FF   </th></tr>
+<tr>
+<th style="text-align:left;" width="30%">返回类型 </th><th style="text-align:left;" width="20%">类型值 </th><th style="text-align:left;" width="30%">类型信息描述  </th></tr>
+<tr>
+<td>MV_E_HANDLE </td><td>0x80000000 </td><td>错误或无效的句柄  </td></tr>
+<tr>
+<td>MV_E_SUPPORT </td><td>0x80000001 </td><td>不支持的功能  </td></tr>
+<tr>
+<td>MV_E_BUFOVER </td><td>0x80000002 </td><td>缓存已满  </td></tr>
+<tr>
+<td>MV_E_CALLORDER </td><td>0x80000003 </td><td>函数调用顺序有误  </td></tr>
+<tr>
+<td>MV_E_PARAMETER </td><td>0x80000004 </td><td>错误的参数  </td></tr>
+<tr>
+<td>MV_E_RESOURCE </td><td>0x80000006 </td><td>资源申请失败  </td></tr>
+<tr>
+<td>MV_E_NODATA </td><td>0x80000007 </td><td>无数据  </td></tr>
+<tr>
+<td>MV_E_PRECONDITION </td><td>0x80000008 </td><td>前置条件有误，或运行环境已发生变化  </td></tr>
+<tr>
+<td>MV_E_VERSION </td><td>0x80000009 </td><td>版本不匹配  </td></tr>
+<tr>
+<td>MV_E_NOENOUGH_BUF </td><td>0x8000000A </td><td>传入的内存空间不足  </td></tr>
+<tr>
+<td>MV_E_ABNORMAL_IMAGE </td><td>0x8000000B </td><td>异常图像，可能是丢包导致图像不完整  </td></tr>
+<tr>
+<td>MV_E_LOAD_LIBRARY </td><td>0x8000000C </td><td>动态导入DLL失败  </td></tr>
+<tr>
+<td>MV_E_NOOUTBUF </td><td>0x8000000D </td><td>没有可输出的缓存  </td></tr>
+<tr>
+<td>MV_E_ENCRYPT </td><td>0x8000000E </td><td>加密错误  </td></tr>
+<tr>
+<td>MV_E_OPENFILE </td><td>0x8000000F </td><td>打开文件出现错误  </td></tr>
+<tr>
+<td>MV_E_UNKNOW </td><td>0x800000FF </td><td>未知的错误  </td></tr>
+</table>
+</div><div id="hikvision"></div><div id="hikvision">&#160;</div><div id="hikvision"> <table width="80%" style="margin: 0 0 0 40px;">
+<tr>
+<th colspan="3" style="text-align:left;">GenICam系列错误码：范围0x80000100-0x800001FF  </th></tr>
+<tr>
+<th style="text-align:left;" width="30%">返回类型 </th><th style="text-align:left;" width="20%">类型值 </th><th style="text-align:left;" width="30%">类型信息描述  </th></tr>
+<tr>
+<td>MV_E_GC_GENERIC </td><td>0x80000100 </td><td>通用错误  </td></tr>
+<tr>
+<td>MV_E_GC_ARGUMENT </td><td>0x80000101 </td><td>参数非法  </td></tr>
+<tr>
+<td>MV_E_GC_RANGE </td><td>0x80000102 </td><td>值超出范围  </td></tr>
+<tr>
+<td>MV_E_GC_PROPERTY </td><td>0x80000103 </td><td>属性  </td></tr>
+<tr>
+<td>MV_E_GC_RUNTIME </td><td>0x80000104 </td><td>运行环境有问题  </td></tr>
+<tr>
+<td>MV_E_GC_LOGICAL </td><td>0x80000105 </td><td>逻辑错误  </td></tr>
+<tr>
+<td>MV_E_GC_ACCESS </td><td>0x80000106 </td><td>节点访问条件有误  </td></tr>
+<tr>
+<td>MV_E_GC_TIMEOUT </td><td>0x80000107 </td><td>超时  </td></tr>
+<tr>
+<td>MV_E_GC_DYNAMICCAST </td><td>0x80000108 </td><td>转换异常  </td></tr>
+<tr>
+<td>MV_E_GC_UNKNOW </td><td>0x800001FF </td><td>GenICam未知错误  </td></tr>
+</table>
+</div><div id="hikvision"></div><div id="hikvision">&#160;</div><div id="hikvision"> <table width="80%" style="margin: 0 0 0 40px;">
+<tr>
+<th colspan="3" style="text-align:left;">GigE_STATUS对应的错误码：范围0x80000200-0x800002FF  </th></tr>
+<tr>
+<th style="text-align:left;" width="30%">返回类型 </th><th style="text-align:left;" width="20%">类型值 </th><th style="text-align:left;" width="30%">类型信息描述  </th></tr>
+<tr>
+<td>MV_E_NOT_IMPLEMENTED </td><td>0x80000200 </td><td>命令不被设备支持  </td></tr>
+<tr>
+<td>MV_E_INVALID_ADDRESS </td><td>0x80000201 </td><td>访问的目标地址不存在  </td></tr>
+<tr>
+<td>MV_E_WRITE_PROTECT </td><td>0x80000202 </td><td>目标地址不可写  </td></tr>
+<tr>
+<td>MV_E_ACCESS_DENIED </td><td>0x80000203 </td><td>设备无访问权限  </td></tr>
+<tr>
+<td>MV_E_BUSY </td><td>0x80000204 </td><td>设备忙，或网络断开  </td></tr>
+<tr>
+<td>MV_E_PACKET </td><td>0x80000205 </td><td>网络包数据错误  </td></tr>
+<tr>
+<td>MV_E_NETER </td><td>0x80000206 </td><td>网络相关错误  </td></tr>
+<tr>
+<td>MV_E_KEY_VERIFICATION </td><td>0x8000020F </td><td>秘钥校验错误  </td></tr>
+<tr>
+<td>MV_E_IP_CONFLICT </td><td>0x80000221 </td><td>设备IP冲突  </td></tr>
+</table>
+</div><div id="hikvision"></div><div id="hikvision">&#160;</div><div id="hikvision"> <table width="80%" style="margin: 0 0 0 40px;">
+<tr>
+<th colspan="3" style="text-align:left;">USB_STATUS对应的错误码：范围0x80000300-0x800003FF  </th></tr>
+<tr>
+<th style="text-align:left;" width="30%">返回类型 </th><th style="text-align:left;" width="20%">类型值 </th><th style="text-align:left;" width="30%">类型值描述  </th></tr>
+<tr>
+<td>MV_E_USB_READ </td><td>0x80000300 </td><td>读USB出错  </td></tr>
+<tr>
+<td>MV_E_USB_WRITE </td><td>0x80000301 </td><td>写USB出错  </td></tr>
+<tr>
+<td>MV_E_USB_DEVICE </td><td>0x80000302 </td><td>设备异常  </td></tr>
+<tr>
+<td>MV_E_USB_GENICAM </td><td>0x80000303 </td><td>GenICam相关错误  </td></tr>
+<tr>
+<td>MV_E_USB_BANDWIDTH </td><td>0x80000304 </td><td>带宽不足  </td></tr>
+<tr>
+<td>MV_E_USB_DRIVER </td><td>0x80000305 </td><td>驱动不匹配或者未装驱动  </td></tr>
+<tr>
+<td>MV_E_USB_UNKNOW </td><td>0x800003FF </td><td>USB未知的错误  </td></tr>
+</table>
+</div><div id="hikvision"></div><div id="hikvision">&#160;</div><div id="hikvision"> <table width="80%" style="margin: 0 0 0 40px;">
+<tr>
+<th colspan="3" style="text-align:left;">升级时对应的错误码：范围0x80000400-0x800004FF  </th></tr>
+<tr>
+<th style="text-align:left;" width="30%">返回类型 </th><th style="text-align:left;" width="20%">类型值 </th><th style="text-align:left;" width="30%">类型值描述  </th></tr>
+<tr>
+<td>MV_E_UPG_FILE_MISMATCH </td><td>0x80000400 </td><td>升级固件不匹配  </td></tr>
+<tr>
+<td>MV_E_UPG_LANGUSGE_MISMATCH </td><td>0x80000401 </td><td>升级固件语言不匹配  </td></tr>
+<tr>
+<td>MV_E_UPG_CONFLICT </td><td>0x80000402 </td><td>升级冲突（设备已经在升级了再次请求升级即返回此错误）  </td></tr>
+<tr>
+<td>MV_E_UPG_INNER_ERR </td><td>0x80000403 </td><td>升级时相机内部出现错误  </td></tr>
+<tr>
+<td>MV_E_UPG_UNKNOW </td><td>0x800004FF </td><td>升级时未知错误  </td></tr>
+</table>
+</div><div id="hikvision"></div><div id="hikvision">&#160;</div><div id="hikvision"> <table width="80%" style="margin: 0 0 0 40px;">
+<tr>
+<th colspan="3" style="text-align:left;">异常错误码  </th></tr>
+<tr>
+<th style="text-align:left;" width="30%">自定义状态码 </th><th style="text-align:left;" width="20%">类型值 </th><th style="text-align:left;" width="30%">类型值描述  </th></tr>
+<tr>
+<td>MV_EXCEPTION_DEV_DISCONNECT </td><td>0x00008001 </td><td>设备断开连接  </td></tr>
+<tr>
+<td>MV_EXCEPTION_VERSION_CHECK </td><td>0x00008002 </td><td>SDK与驱动版本不匹配  </td></tr>
+</table>
+</div><div id="hikvision">&#160;</div><div id="hikvision"></div><div id="hikvision"><div class="mainparams"> <h2>二、算法库透传状态码</h2>
+</div></div><div id="hikvision"><div class="mainparams"> </div> <table width="80%" style="margin: 0 0 0 40px;">
+<tr>
+<th colspan="3" style="text-align:left;">通用类型：范围0x00000000-0x10000000  </th></tr>
+<tr>
+<th style="text-align:left;" width="30%">自定义状态码 </th><th style="text-align:left;" width="20%">类型值 </th><th style="text-align:left;" width="30%">类型信息描述  </th></tr>
+<tr>
+<td>MV_ALG_OK </td><td>0x00000000 </td><td>处理正确  </td></tr>
+<tr>
+<td>MV_ALG_ERR </td><td>0x10000000 </td><td>不确定类型错误  </td></tr>
+</table>
+</div><div id="hikvision"></div><div id="hikvision">&#160;</div><div id="hikvision"> <table width="80%" style="margin: 0 0 0 40px;">
+<tr>
+<th colspan="3" style="text-align:left;">能力检查  </th></tr>
+<tr>
+<th style="text-align:left;" width="30%">自定义状态码 </th><th style="text-align:left;" width="20%">类型值 </th><th style="text-align:left;" width="30%">类型信息描述  </th></tr>
+<tr>
+<td>MV_ALG_E_ABILITY_ARG </td><td>0x10000001 </td><td>能力集中存在无效参数  </td></tr>
+</table>
+</div><div id="hikvision"></div><div id="hikvision">&#160;</div><div id="hikvision"> <table width="80%" style="margin: 0 0 0 40px;">
+<tr>
+<th colspan="3" style="text-align:left;">内存检查：范围0x10000002-0x10000006  </th></tr>
+<tr>
+<th style="text-align:left;" width="30%">自定义状态码 </th><th style="text-align:left;" width="20%">类型值 </th><th style="text-align:left;" width="30%">类型信息描述  </th></tr>
+<tr>
+<td>MV_ALG_E_MEM_NULL </td><td>0x10000002 </td><td>内存地址为空  </td></tr>
+<tr>
+<td>MV_ALG_E_MEM_ALIGN </td><td>0x10000003 </td><td>内存对齐不满足要求  </td></tr>
+<tr>
+<td>MV_ALG_E_MEM_LACK </td><td>0x10000004 </td><td>内存空间大小不够  </td></tr>
+<tr>
+<td>MV_ALG_E_MEM_SIZE_ALIGN </td><td>0x10000005 </td><td>内存空间大小不满足对齐要求  </td></tr>
+<tr>
+<td>MV_ALG_E_MEM_ADDR_ALIGN </td><td>0x10000006 </td><td>内存地址不满足对齐要求  </td></tr>
+</table>
+</div><div id="hikvision"></div><div id="hikvision">&#160;</div><div id="hikvision"> <table width="80%" style="margin: 0 0 0 40px;">
+<tr>
+<th colspan="3" style="text-align:left;">图像检查：范围0x10000007-0x1000000A  </th></tr>
+<tr>
+<th style="text-align:left;" width="30%">自定义状态码 </th><th style="text-align:left;" width="20%">类型值 </th><th style="text-align:left;" width="30%">类型信息描述  </th></tr>
+<tr>
+<td>MV_ALG_E_IMG_FORMAT </td><td>0x10000007 </td><td>图像格式不正确或者不支持  </td></tr>
+<tr>
+<td>MV_ALG_E_IMG_SIZE </td><td>0x10000008 </td><td>图像宽高不正确或者超出范围  </td></tr>
+<tr>
+<td>MV_ALG_E_IMG_STEP </td><td>0x10000009 </td><td>图像宽高与step参数不匹配  </td></tr>
+<tr>
+<td>MV_ALG_E_IMG_DATA_NULL </td><td>0x1000000A </td><td>图像数据存储地址为空（某个分量）  </td></tr>
+</table>
+</div><div id="hikvision"></div><div id="hikvision">&#160;</div><div id="hikvision"> <table width="80%" style="margin: 0 0 0 40px;">
+<tr>
+<th colspan="3" style="text-align:left;">输入输出参数检查：范围0x1000000B-0x10000010  </th></tr>
+<tr>
+<th style="text-align:left;" width="30%">自定义状态码 </th><th style="text-align:left;" width="20%">类型值 </th><th style="text-align:left;" width="30%">类型信息描述  </th></tr>
+<tr>
+<td>MV_ALG_E_CFG_TYPE </td><td>0x1000000B </td><td>设置或者获取参数类型不正确  </td></tr>
+<tr>
+<td>MV_ALG_E_CFG_SIZE </td><td>0x1000000C </td><td>设置或者获取参数的输入、输出结构体大小不正确  </td></tr>
+<tr>
+<td>MV_ALG_E_PRC_TYPE </td><td>0x1000000D </td><td>处理类型不正确  </td></tr>
+<tr>
+<td>MV_ALG_E_PRC_SIZE </td><td>0x1000000E </td><td>处理时输入、输出参数大小不正确  </td></tr>
+<tr>
+<td>MV_ALG_E_FUNC_TYPE </td><td>0x1000000F </td><td>子处理类型不正确  </td></tr>
+<tr>
+<td>MV_ALG_E_FUNC_SIZE </td><td>0x10000010 </td><td>子处理时输入、输出参数大小不正确  </td></tr>
+</table>
+</div><div id="hikvision"></div><div id="hikvision">&#160;</div><div id="hikvision"> <table width="80%" style="margin: 0 0 0 40px;">
+<tr>
+<th colspan="3" style="text-align:left;">能运行参数检查：范围0x10000011-0x10000013  </th></tr>
+<tr>
+<th style="text-align:left;" width="30%">自定义状态码 </th><th style="text-align:left;" width="20%">类型值 </th><th style="text-align:left;" width="30%">类型信息描述  </th></tr>
+<tr>
+<td>MV_ALG_E_PARAM_INDEX </td><td>0x10000011 </td><td>index参数不正确  </td></tr>
+<tr>
+<td>MV_ALG_E_PARAM_VALUE </td><td>0x10000012 </td><td>value参数不正确或者超出范围  </td></tr>
+<tr>
+<td>MV_ALG_E_PARAM_NUM </td><td>0x10000013 </td><td>param_num参数不正确  </td></tr>
+</table>
+</div><div id="hikvision"></div><div id="hikvision">&#160;</div><div id="hikvision"> <table width="80%" style="margin: 0 0 0 40px;">
+<tr>
+<th colspan="3" style="text-align:left;">接口调用检查：范围0x10000014-0x10000016  </th></tr>
+<tr>
+<th style="text-align:left;" width="30%">自定义状态码 </th><th style="text-align:left;" width="20%">类型值 </th><th style="text-align:left;" width="30%">类型信息描述  </th></tr>
+<tr>
+<td>MV_ALG_E_NULL_PTR </td><td>0x10000014 </td><td>函数参数指针为空  </td></tr>
+<tr>
+<td>MV_ALG_E_OVER_MAX_MEM </td><td>0x10000015 </td><td>超过限定的最大内存  </td></tr>
+<tr>
+<td>MV_ALG_E_CALL_BACK </td><td>0x10000016 </td><td>回调函数出错  </td></tr>
+</table>
+</div><div id="hikvision"></div><div id="hikvision">&#160;</div><div id="hikvision"> <table width="80%" style="margin: 0 0 0 40px;">
+<tr>
+<th colspan="3" style="text-align:left;">算法库加密相关检查：范围0x10000017-0x10000018  </th></tr>
+<tr>
+<th style="text-align:left;" width="30%">自定义状态码 </th><th style="text-align:left;" width="20%">类型值 </th><th style="text-align:left;" width="30%">类型信息描述  </th></tr>
+<tr>
+<td>MV_ALG_E_ENCRYPT </td><td>0x10000017 </td><td>加密错误  </td></tr>
+<tr>
+<td>MV_ALG_E_EXPIRE </td><td>0x10000018 </td><td>算法库使用期限错误  </td></tr>
+</table>
+</div><div id="hikvision"></div><div id="hikvision">&#160;</div><div id="hikvision"> <table width="80%" style="margin: 0 0 0 40px;">
+<tr>
+<th colspan="3" style="text-align:left;">内部模块返回的基本错误类型：范围0x10000019-0x1000001B  </th></tr>
+<tr>
+<th style="text-align:left;" width="30%">自定义状态码 </th><th style="text-align:left;" width="20%">类型值 </th><th style="text-align:left;" width="30%">类型信息描述  </th></tr>
+<tr>
+<td>MV_ALG_E_BAD_ARG </td><td>0x10000019 </td><td>参数范围不正确  </td></tr>
+<tr>
+<td>MV_ALG_E_DATA_SIZE </td><td>0x1000001A </td><td>数据大小不正确  </td></tr>
+<tr>
+<td>MV_ALG_E_STEP </td><td>0x1000001B </td><td>数据step不正确  </td></tr>
+</table>
+</div><div id="hikvision"></div><div id="hikvision">&#160;</div><div id="hikvision"> <table width="80%" style="margin: 0 0 0 40px;">
+<tr>
+<th colspan="3" style="text-align:left;">降噪特有错误码：范围0x10402001-0x1040200f  </th></tr>
+<tr>
+<th style="text-align:left;" width="30%">自定义状态码 </th><th style="text-align:left;" width="20%">类型值 </th><th style="text-align:left;" width="30%">类型信息描述  </th></tr>
+<tr>
+<td>MV_ALG_E_DENOISE_NE_IMG_FORMAT </td><td>0x10402001 </td><td>噪声特性图像格式错误  </td></tr>
+<tr>
+<td>MV_ALG_E_DENOISE_NE_FEATURE_TYPE </td><td>0x10402002 </td><td>噪声特性类型错误  </td></tr>
+<tr>
+<td>MV_ALG_E_DENOISE_NE_PROFILE_NUM </td><td>0x10402003 </td><td>噪声特性个数错误  </td></tr>
+<tr>
+<td>MV_ALG_E_DENOISE_NE_GAIN_NUM  </td><td>0x10402004 </td><td>噪声特性增益个数错误  </td></tr>
+<tr>
+<td>MV_ALG_E_DENOISE_NE_GAIN_VAL  </td><td>0x10402005 </td><td>噪声曲线增益值输入错误  </td></tr>
+<tr>
+<td>MV_ALG_E_DENOISE_NE_BIN_NUM </td><td>0x10402006 </td><td>噪声曲线柱数错误  </td></tr>
+<tr>
+<td>MV_ALG_E_DENOISE_NE_INIT_GAIN </td><td>0x10402007 </td><td>噪声估计初始化增益设置错误  </td></tr>
+<tr>
+<td>MV_ALG_E_DENOISE_NE_NOT_INIT </td><td>0x10402008 </td><td>噪声估计未初始化  </td></tr>
+<tr>
+<td>MV_ALG_E_DENOISE_COLOR_MODE </td><td>0x10402009 </td><td>颜色空间模式错误  </td></tr>
+<tr>
+<td>MV_ALG_E_DENOISE_ROI_NUM </td><td>0x1040200a </td><td>图像ROI个数错误  </td></tr>
+<tr>
+<td>MV_ALG_E_DENOISE_ROI_ORI_PT </td><td>0x1040200b </td><td>图像ROI原点错误  </td></tr>
+<tr>
+<td>MV_ALG_E_DENOISE_ROI_SIZE </td><td>0x1040200c </td><td>图像ROI大小错误  </td></tr>
+<tr>
+<td>MV_ALG_E_DENOISE_GAIN_NOT_EXIST </td><td>0x1040200d </td><td>输入的相机增益不存在（增益个数已达上限）  </td></tr>
+<tr>
+<td>MV_ALG_E_DENOISE_GAIN_BEYOND_RANGE </td><td>0x1040200e </td><td>输入的相机增益不在范围内  </td></tr>
+<tr>
+<td>MV_ALG_E_DENOISE_NP_BUF_SIZE </td><td>0x1040200f </td><td>输入的噪声特性内存大小错误  </td></tr>
+</table>
+</div><div id="hikvision"></div><div id="hikvision">&#160;</div><div id="hikvision"> <table width="80%" style="margin: 0 0 0 40px;">
+<tr>
+<th colspan="3" style="text-align:left;">其他错误码：范围0x1000001C-0x1000002C  </th></tr>
+<tr>
+<th style="text-align:left;" width="30%">自定义状态码 </th><th style="text-align:left;" width="20%">类型值 </th><th style="text-align:left;" width="30%">类型信息描述  </th></tr>
+<tr>
+<td>MV_ALG_E_CPUID </td><td>0x1000001C </td><td>cpu不支持优化代码中的指令集  </td></tr>
+<tr>
+<td>MV_ALG_WARNING </td><td>0x1000001D </td><td>警告  </td></tr>
+<tr>
+<td>MV_ALG_E_TIME_OUT </td><td>0x1000001E </td><td>算法库超时  </td></tr>
+<tr>
+<td>MV_ALG_E_LIB_VERSION </td><td>0x1000001F </td><td>算法版本号出错  </td></tr>
+<tr>
+<td>MV_ALG_E_MODEL_VERSION </td><td>0x10000020 </td><td>模型版本号出错  </td></tr>
+<tr>
+<td>MV_ALG_E_GPU_MEM_ALLOC </td><td>0x10000021 </td><td>GPU内存分配错误  </td></tr>
+<tr>
+<td>MV_ALG_E_FILE_NON_EXIST </td><td>0x10000022 </td><td>文件不存在  </td></tr>
+<tr>
+<td>MV_ALG_E_NONE_STRING </td><td>0x10000023 </td><td>字符串为空  </td></tr>
+<tr>
+<td>MV_ALG_E_IMAGE_CODEC </td><td>0x10000024 </td><td>图像解码器错误  </td></tr>
+<tr>
+<td>MV_ALG_E_FILE_OPEN </td><td>0x10000025 </td><td>打开文件错误  </td></tr>
+<tr>
+<td>MV_ALG_E_FILE_READ </td><td>0x10000026 </td><td>文件读取错误  </td></tr>
+<tr>
+<td>MV_ALG_E_FILE_WRITE </td><td>0x10000027 </td><td>文件写错误  </td></tr>
+<tr>
+<td>MV_ALG_E_FILE_READ_SIZE </td><td>0x10000028 </td><td>文件读取大小错误  </td></tr>
+<tr>
+<td>MV_ALG_E_FILE_TYPE </td><td>0x10000029 </td><td>文件类型错误  </td></tr>
+<tr>
+<td>MV_ALG_E_MODEL_TYPE </td><td>0x1000002A </td><td>模型类型错误  </td></tr>
+<tr>
+<td>MV_ALG_E_MALLOC_MEM </td><td>0x1000002B </td><td>分配内存错误  </td></tr>
+<tr>
+<td>MV_ALG_E_BIND_CORE_FAILED </td><td>0x1000002C </td><td>线程绑核失败  </td></tr>
+</table>
+</div> </div></div><!-- PageDoc -->
+</div><!-- contents -->
+<!-- start footer part -->
+<div class="footer" style="text-align: right;">
+	<hr/>
+	<small></small>
+</div>
+<script>
+	// 当前选中的菜单
+	var currentMenuItem = document.querySelector('.tablist > li.current > a')
+	if (currentMenuItem) { // 子菜单情况
+	  window.parent.postMessage({
+		navHref: currentMenuItem.href
+	  }, '*')
+	} else {
+	  window.parent.postMessage({
+		url: window.location.href
+	  }, '*')
+	}
+  </script>
+</body>
+</html>

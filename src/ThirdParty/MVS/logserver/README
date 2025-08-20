@@ -1,0 +1,32 @@
+工业相机SDK 日志服务安装、卸载使用说明。
+===========================================================================
+
+日志服务安装和卸载：
+===========================================================================
+（1）安装完MVS后，日志服务目录在/opt/MVS/logserver路径下，默认日志路径在/var/log/MVS/MvSdkLog路径下
+（2）日志服务安装：首先进入/opt/MVS/logserver路径下，执行sudo ./InstallServer.sh 或者 sudo bash ./InstallServer.sh。
+（3）日志服务卸载：首先进入/opt/MVS/logserver路径下，执行sudo ./RemoveServer.sh 或者 sudo bash ./RemoveServer.sh。
+===========================================================================
+	
+查看是否安装成功方法：
+===========================================================================
+执行ps -aux | grep MvLogServer命令，查看是否该进程，或者打开MVS客户端日志查看工具是否有日志显示：
+
+
+
+
+
+Instructions for installing and uninstalling logserver for industrial cameras SDK.
+===========================================================================
+
+Logserver installation and uninstallation:
+===========================================================================
+（1）After installing MVS, install the logerver in the/opt/MVS/logserver path, SDK log path is /var/log/MVS/MvSdkLog
+（2）Logserver installation: First, enter the /opt/MVS/logserver path and execute "sudo ./InstallServer.sh or sudo bash ./InstallServer.sh" command.
+（3）Logserver Uninstallation: Enter the /opt/MVS/logserver path and execute "sudo ./RemoveServer.sh or sudo bash ./RemoveServer.sh" command.
+===========================================================================
+	
+To check whether the installation was successful:
+===========================================================================
+Execute the ps -aux | grep MvLogServer check whether the MvLogServer process exist.
+

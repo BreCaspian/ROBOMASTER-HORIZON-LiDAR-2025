@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="custom-style.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+	<div style="overflow: hidden;">
+		<div style="height: 57px;min-width: 1039px;background-size: auto 100%;background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABwgAAAABCAYAAADKO/rAAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAABRSURBVFhH7dUxCoBADEXB5LK5/w1iIaLIrsgWNs50Sf/4WVUd8HOZGd1nCqMbGNMPrNMPrJv1cvz0A3OjfuwPvDPrxf7A7t7IlX7gmX74VsQGguw4S6+UnSYAAAAASUVORK5CYII=');">
+			<img src="titleleft.png" style="float: left;"/>
+			<img src="titleright.png" alt="" style="float: right;" />
+		</div>
+	</div>
+<!-- 制作者 Doxygen 1.8.15 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>法律声明</span></a></li>
+      <li><a href="_xE9_xA6_x96_xE9_xA1_xB5.html"><span>首页</span></a></li>
+      <li><a href="_xE6_x9B_xB4_xE6_x96_xB0_xE8_xAE_xB0_xE5_xBD_x95.html"><span>更新记录</span></a></li>
+      <li><a href="usergroup0.html"><span>编程引导</span></a></li>
+      <li><a href="modules.html"><span>接口及数据结构</span></a></li>
+      <li><a href="_xE6_x8E_xA7_xE5_x88_xB6_xE5_x8F_xB0_xE7_xA4_xBA_xE4_xBE_x8B_xE7_xA8_x8B_xE5_xBA_x8F.html"><span>示例程序</span></a></li>
+      <li><a href="_xE9_x94_x99_xE8_xAF_xAF_xE7_xA0_x81.html"><span>错误码</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="PageDoc"><div class="contents">
+<div class="textblock"><div class="header" style="margin-left:-12px;margin-top:-10px;margin-right:-8px;"> <div class="headertitle"> <div class="title">获取事件</div> </div> </div> <div id="hikvision"> <br />
+ </div><div id="hikvision">事件可以分为正常通知事件和异常告警事件两种，通过回调函数方式通知给用户。其中正常通知事件是由采集卡/相机发出的正常状态下的事件，此类事件来自采集卡/相机的EventControl属性；异常告警事件是由采集卡/相机发出的非正常状态下的事件，此类事件用于指示采集卡/相机可能存在的异常情况，提醒用户及时进行排查。</div><div id="hikvision"> <ul>
+<li>
+<a href="#zhengchangtongzhishijian" class="el">正常通知事件</a> </li>
+<li>
+<a href="#yichanggaojingshijian" class="el">异常告警事件</a> </li>
+</ul>
+<br />
+ </div><div class="header" style="margin-left:-12px;margin-top:-10px;margin-right:-8px;"> <div class="headertitle"> <div id="zhengchangtongzhishijian" class="title">正常通知事件</div> </div> </div> <div id="hikvision"> <br />
+ </div><div id="hikvision">通过注册、打开、获取、关闭和注销等步骤完成采集卡/相机正常通知事件流程：</div><div id="hikvision"> <ul>
+<li>
+<b>注册</b>：通过调用 <a class="el" href="group___xE4_xBA_x8B_xE4_xBB_xB6_xE6_x8E_xA5_xE5_x8F_xA3.html#ga07fc0b5e73c3ebe183bb4d8876008a1a" title="注册事件回调函数">MV_FG_RegisterEventCallBack()</a> 接口，输入事件名称，将事件回调函数注册到SDK内部。其中参数pUser用于用户输入自定义数据，并会在触发事件回调函数时同步输出，SDK不关心该自定义数据的内容和用法，也不会对其做任何改变。 </li>
+<li>
+<b>打开</b>：通过调用 <a class="el" href="group___xE5_xB1_x9E_xE6_x80_xA7_xE9_x85_x8D_xE7_xBD_xAE_xE6_x8E_xA5_xE5_x8F_xA3.html#ga5d3608599b1901c97ddd376d3eef3413" title="通过字符串设置枚举类型节点的信息">MV_FG_SetEnumValueByString()</a> 接口，依次选择事件类型、事件通道和具体事件，然后打开该采集卡/相机事件。另外，也可以通过采集卡配置工具进行配置。<br />
+ 下面的代码片段演示了注册和打开采集卡事件的过程，相机事件的过程类似：<br />
+ <div class="fragment"><div class="line"><span class="comment">/*注册采集卡帧开始事件回调*/</span></div><div class="line"><span class="comment">/*采集卡句柄作为pUser参数的输入，可用于区分相同名称的事件属于哪个采集卡*/</span></div><div class="line">nRet = <a class="code" href="group___xE4_xBA_x8B_xE4_xBB_xB6_xE6_x8E_xA5_xE5_x8F_xA3.html#ga07fc0b5e73c3ebe183bb4d8876008a1a">MV_FG_RegisterEventCallBack</a>(hInterface, <span class="stringliteral">&quot;ReceiveImageFrameStart0&quot;</span>, EventCallBack, hInterface);</div><div class="line">Check(nRet);</div><div class="line"></div><div class="line"><span class="comment">/*选择事件类型为流事件*/</span></div><div class="line">nRet = <a class="code" href="group___xE5_xB1_x9E_xE6_x80_xA7_xE9_x85_x8D_xE7_xBD_xAE_xE6_x8E_xA5_xE5_x8F_xA3.html#ga5d3608599b1901c97ddd376d3eef3413">MV_FG_SetEnumValueByString</a>(hInterface, <span class="stringliteral">&quot;EventCategory&quot;</span>, <span class="stringliteral">&quot;StreamEvent&quot;</span>);</div><div class="line">Check(nRet);</div><div class="line"></div><div class="line"><span class="comment">/*选择事件通道为Channel0*/</span></div><div class="line">nRet = <a class="code" href="group___xE5_xB1_x9E_xE6_x80_xA7_xE9_x85_x8D_xE7_xBD_xAE_xE6_x8E_xA5_xE5_x8F_xA3.html#ga5d3608599b1901c97ddd376d3eef3413">MV_FG_SetEnumValueByString</a>(hInterface, <span class="stringliteral">&quot;ChannelSelector&quot;</span>, <span class="stringliteral">&quot;Channel0&quot;</span>);</div><div class="line">Check(nRet);</div><div class="line"></div><div class="line"><span class="comment">/*选择具体事件为帧开始事件*/</span></div><div class="line">nRet = <a class="code" href="group___xE5_xB1_x9E_xE6_x80_xA7_xE9_x85_x8D_xE7_xBD_xAE_xE6_x8E_xA5_xE5_x8F_xA3.html#ga5d3608599b1901c97ddd376d3eef3413">MV_FG_SetEnumValueByString</a>(hInterface, <span class="stringliteral">&quot;EventSelector&quot;</span>,<span class="stringliteral">&quot;ReceiveImageFrameStart0&quot;</span>);</div><div class="line">Check(nRet);</div><div class="line"></div><div class="line"><span class="comment">/*打开帧开始事件*/</span></div><div class="line">nRet = <a class="code" href="group___xE5_xB1_x9E_xE6_x80_xA7_xE9_x85_x8D_xE7_xBD_xAE_xE6_x8E_xA5_xE5_x8F_xA3.html#ga5d3608599b1901c97ddd376d3eef3413">MV_FG_SetEnumValueByString</a>(hInterface, <span class="stringliteral">&quot;EventNotification&quot;</span>, <span class="stringliteral">&quot;On&quot;</span>);</div><div class="line">Check(nRet);</div></div><!-- fragment --> </li>
+<li>
+<b>获取</b>：当采集卡生成一个事件时，会触发对应的事件回调函数，将该事件信息推送给用户。一般情况下推送给用户的事件信息中会包含事件名称、事件ID和时间戳等关键信息，其它如帧号和事件数据等信息并不是必有的，不同事件会存在差异。应当注意的是，不建议在事件回调函数中进行耗时操作，这会阻塞后续事件信息的推送。<br />
+ 下面的代码片段演示了事件回调函数推送的内容：<br />
+ <div class="fragment"><div class="line"><span class="comment">/*事件回调函数*/</span></div><div class="line"><span class="keywordtype">void</span> __stdcall EventCallBack(<a class="code" href="struct_m_v___f_g___e_v_e_n_t___i_n_f_o.html">MV_FG_EVENT_INFO</a>* pstEventInfo, <span class="keywordtype">void</span>* pUser)</div><div class="line">{</div><div class="line">    printf(<span class="stringliteral">&quot;Event name: %s, Event ID: 0x%x, Timestamp: %I64d\r\n&quot;</span>, pstEventInfo-&gt;<a class="code" href="struct_m_v___f_g___e_v_e_n_t___i_n_f_o.html#abe05b52b85057a57952c0bffe8c82e5b">EventName</a>, pstEventInfo-&gt;<a class="code" href="struct_m_v___f_g___e_v_e_n_t___i_n_f_o.html#a130c8c2fd6e7a157c4a7e83ea481da98">nEventID</a>, pstEventInfo-&gt;<a class="code" href="struct_m_v___f_g___e_v_e_n_t___i_n_f_o.html#a3b22df5abbea9a7daa7a6d941cf454d8">nTimestamp</a>);</div><div class="line">    <span class="keywordflow">if</span>(pEventData)</div><div class="line">    {</div><div class="line">        <span class="comment">/*当回调函数结束后，事件数据所指向的内存会被SDK回收，用户需要及时拷贝*/</span></div><div class="line">        memcpy(pBuffer, pstEventInfo-&gt;<a class="code" href="struct_m_v___f_g___e_v_e_n_t___i_n_f_o.html#a46bacad7de0049c46da8a84c68648c9e">pEventData</a>, pstEventInfo-&gt;<a class="code" href="struct_m_v___f_g___e_v_e_n_t___i_n_f_o.html#a2a1b57f70fde36d123ff60b0639de4db">nEventDataSize</a>);</div><div class="line">    }</div><div class="line">}</div></div><!-- fragment -->  </li>
+<li>
+<b>关闭</b>：当需要关闭事件时，可以通过调用 <a class="el" href="group___xE5_xB1_x9E_xE6_x80_xA7_xE9_x85_x8D_xE7_xBD_xAE_xE6_x8E_xA5_xE5_x8F_xA3.html#ga5d3608599b1901c97ddd376d3eef3413" title="通过字符串设置枚举类型节点的信息">MV_FG_SetEnumValueByString()</a> 接口，依次选择事件类型、事件通道和具体事件，然后将其关闭。 </li>
+<li>
+<b>注销</b>：通过调用 <a class="el" href="group___xE4_xBA_x8B_xE4_xBB_xB6_xE6_x8E_xA5_xE5_x8F_xA3.html#ga07fc0b5e73c3ebe183bb4d8876008a1a" title="注册事件回调函数">MV_FG_RegisterEventCallBack()</a> 接口，输入事件名称，将回调函数参数设置为NULL，注销对应的事件回调函数。此步骤并不是必须的，因为关闭采集卡后，SDK会自动注销该事件的回调函数。<br />
+ 下面的代码片段演示了关闭和注销采集卡事件的过程：<br />
+ <div class="fragment"><div class="line"><span class="comment">/*选择事件类型为流事件*/</span></div><div class="line">nRet = <a class="code" href="group___xE5_xB1_x9E_xE6_x80_xA7_xE9_x85_x8D_xE7_xBD_xAE_xE6_x8E_xA5_xE5_x8F_xA3.html#ga5d3608599b1901c97ddd376d3eef3413">MV_FG_SetEnumValueByString</a>(hInterface, <span class="stringliteral">&quot;EventCategory&quot;</span>, <span class="stringliteral">&quot;StreamEvent&quot;</span>);</div><div class="line">Check(nRet);</div><div class="line"></div><div class="line"><span class="comment">/*选择事件通道为Channel0*/</span></div><div class="line">nRet = <a class="code" href="group___xE5_xB1_x9E_xE6_x80_xA7_xE9_x85_x8D_xE7_xBD_xAE_xE6_x8E_xA5_xE5_x8F_xA3.html#ga5d3608599b1901c97ddd376d3eef3413">MV_FG_SetEnumValueByString</a>(hInterface, <span class="stringliteral">&quot;ChannelSelector&quot;</span>, <span class="stringliteral">&quot;Channel0&quot;</span>);</div><div class="line">Check(nRet);</div><div class="line"></div><div class="line"><span class="comment">/*选择具体事件为帧开始事件*/</span></div><div class="line">nRet = <a class="code" href="group___xE5_xB1_x9E_xE6_x80_xA7_xE9_x85_x8D_xE7_xBD_xAE_xE6_x8E_xA5_xE5_x8F_xA3.html#ga5d3608599b1901c97ddd376d3eef3413">MV_FG_SetEnumValueByString</a>(hInterface, <span class="stringliteral">&quot;EventSelector&quot;</span>,<span class="stringliteral">&quot;ReceiveImageFrameStart0&quot;</span>);</div><div class="line">Check(nRet);</div><div class="line"></div><div class="line"><span class="comment">/*关闭帧开始事件*/</span></div><div class="line">nRet = <a class="code" href="group___xE5_xB1_x9E_xE6_x80_xA7_xE9_x85_x8D_xE7_xBD_xAE_xE6_x8E_xA5_xE5_x8F_xA3.html#ga5d3608599b1901c97ddd376d3eef3413">MV_FG_SetEnumValueByString</a>(hInterface, <span class="stringliteral">&quot;EventNotification&quot;</span>, <span class="stringliteral">&quot;Off&quot;</span>);</div><div class="line">Check(nRet);</div><div class="line"></div><div class="line"><span class="comment">/*注销采集卡帧开始事件回调*/</span></div><div class="line">nRet = <a class="code" href="group___xE4_xBA_x8B_xE4_xBB_xB6_xE6_x8E_xA5_xE5_x8F_xA3.html#ga07fc0b5e73c3ebe183bb4d8876008a1a">MV_FG_RegisterEventCallBack</a>(hInterface, <span class="stringliteral">&quot;ReceiveImageFrameStart0&quot;</span>, NULL, NULL);</div><div class="line">Check(nRet);</div></div><!-- fragment -->  </li>
+</ul>
+<br />
+ </div><div class="header" style="margin-left:-12px;margin-top:-10px;margin-right:-8px;"> <div class="headertitle"> <div id="yichanggaojingshijian" class="title">异常告警事件</div> </div> </div> <div id="hikvision"> <br />
+ </div><div id="hikvision">通过注册、获取和注销等步骤完成采集卡/相机异常告警事件流程：</div><div id="hikvision"> <ul>
+<li>
+<b>注册</b>：通过调用 <a class="el" href="group___xE4_xBA_x8B_xE4_xBB_xB6_xE6_x8E_xA5_xE5_x8F_xA3.html#gabd1bfa4436431a9ba963ffd3c45deb58" title="注册异常信息回调函数">MV_FG_RegisterExceptionCallBack()</a> 接口，将异常事件的回调函数注册到SDK内部。注册成功后，所有支持的异常事件都会通过该回调函数推送给用户。<br />
+ <div class="fragment"><div class="line"><span class="comment">/*注册采集卡/相机异常告警事件回调*/</span></div><div class="line"><span class="comment">/*采集卡/相机句柄作为pUser参数的输入，可用于区分异常事件属于哪个采集卡/相机*/</span></div><div class="line">nRet = <a class="code" href="group___xE4_xBA_x8B_xE4_xBB_xB6_xE6_x8E_xA5_xE5_x8F_xA3.html#gabd1bfa4436431a9ba963ffd3c45deb58">MV_FG_RegisterExceptionCallBack</a>(hInterface<span class="comment">/*hDevice*/</span>, ExceptionCallBack, hInterface<span class="comment">/*hDevice*/</span>);</div><div class="line">Check(nRet);</div></div><!-- fragment -->  </li>
+<li>
+<b>获取</b>：当采集卡/相机生成一个异常事件时，会触发异常事件回调函数，将该异常事件的类型推送给用户。具体异常事件类型可以参考<a class="el" href="group___xE6_x9E_x9A_xE4_xB8_xBE_xE7_xB1_xBB_xE5_x9E_x8B_xE5_xAE_x9A_xE4_xB9_x89.html#gaab47165761b85c42ca717e7940e375a8">MV_FG_EXCEPTION_TYPE</a> 。应当注意的是，不建议在异常事件回调函数中进行耗时操作，这会阻塞后续事件的推送。<br />
+ <div class="fragment"><div class="line"><span class="comment">/*异常告警事件回调函数*/</span></div><div class="line"><span class="keywordtype">void</span> __stdcall ExceptionCallBack(<a class="code" href="group___xE6_x9E_x9A_xE4_xB8_xBE_xE7_xB1_xBB_xE5_x9E_x8B_xE5_xAE_x9A_xE4_xB9_x89.html#gaab47165761b85c42ca717e7940e375a8">MV_FG_EXCEPTION_TYPE</a> enExceptionType, <span class="keywordtype">void</span>* pUser)</div><div class="line">{</div><div class="line">    printf(<span class="stringliteral">&quot;Exception type: 0x%x\r\n&quot;</span>, enExceptionType);</div><div class="line">}</div></div><!-- fragment -->  </li>
+<li>
+<b>注销</b>：通过调用 <a class="el" href="group___xE4_xBA_x8B_xE4_xBB_xB6_xE6_x8E_xA5_xE5_x8F_xA3.html#gabd1bfa4436431a9ba963ffd3c45deb58" title="注册异常信息回调函数">MV_FG_RegisterExceptionCallBack()</a> 接口，将回调函数参数设置为NULL，注销异常事件回调函数。此步骤并不是必须的，因为关闭采集卡/相机后，SDK会自动注销异常事件的回调函数。<br />
+ <div class="fragment"><div class="line"><span class="comment">/*注销采集卡/相机异常告警事件回调*/</span></div><div class="line">nRet = <a class="code" href="group___xE4_xBA_x8B_xE4_xBB_xB6_xE6_x8E_xA5_xE5_x8F_xA3.html#gabd1bfa4436431a9ba963ffd3c45deb58">MV_FG_RegisterExceptionCallBack</a>(hInterface<span class="comment">/*hDevice*/</span>, NULL, NULL);</div><div class="line">Check(nRet);</div></div><!-- fragment -->  </li>
+</ul>
+<br />
+ </div> </div></div><!-- PageDoc -->
+</div><!-- contents -->
+<!-- start footer part -->
+<div class="footer" style="text-align: right;">
+	<hr/>
+	<small></small>
+</div>
+</body>
+</html>

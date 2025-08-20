@@ -1,0 +1,1 @@
+cmd_/opt/MVS/driver/pcie/TransportLayer/virtualserial/mvfgvirtualserial.ko := ld -r  -m elf_x86_64 -z noexecstack   --build-id=sha1  -T scripts/module.lds -o /opt/MVS/driver/pcie/TransportLayer/virtualserial/mvfgvirtualserial.ko /opt/MVS/driver/pcie/TransportLayer/virtualserial/mvfgvirtualserial.o /opt/MVS/driver/pcie/TransportLayer/virtualserial/mvfgvirtualserial.mod.o;  true

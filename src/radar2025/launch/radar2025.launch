@@ -1,0 +1,6 @@
+<launch>
+    <rosparam command="load" file="$(find radar2025)/Config/default.yaml" />
+    <node pkg="radar2025" type="gui_node" name="gui_node" output="screen"></node>
+    <node name="radar2025" pkg="radar2025" type="radar2025" output="screen" respawn="false"/>
+
+</launch>

@@ -1,0 +1,189 @@
+##############################下面为四点标定赛场数据##############################
+
+{
+      "_comment": "这是 28X15M 正式赛场数据",
+      "Points": [
+            {
+                  "name": "@EnemyRed_P4_RedBase",
+                  "x": 2.409,
+                  "y": -7.5,
+                  "z": 1.243
+            },
+            {
+                  "name": "@EnemyBlue_P4_BlueBase",
+                  "x": 25.591,
+                  "y": -7.5,
+                  "z": 1.243
+            },
+            {
+                  "name": "@EnemyRed_P3_RedOutpost",
+                  "x": 10.992,
+                  "y": -11.357,
+                  "z": 1.731
+            },
+            {
+                  "name": "@pEnemyBlue_P3_BlueOutpost",
+                  "x": 17.008,
+                  "y": -3.643,
+                  "z": 1.731
+            },
+            {
+                  "name": "@EnemyRed_P2_BlueLeft",
+                  "x": 18.465,
+                  "y": -8.836,
+                  "z": 0.200
+            },
+            {
+                  "name": "@EnemyBlue_P2_RedLeft",
+                  "x": 9.535,
+                  "y": -6.164,
+                  "z": 0.200
+            },
+            {
+                  "name": "@EnemyRed_P1_BlueRight",
+                  "x": 18.465,
+                  "y": -6.164,
+                  "z": 0.200
+            },
+            {
+                  "name": "@EnemyBlue_P1_RedRight",
+                  "x": 9.535,
+                  "y": -8.836,
+                  "z": 0.200
+            }
+      ],
+      "when_enemy_red": [
+            "@EnemyRed_P4_RedBase",
+            "@EnemyRed_P3_RedOutpost",
+            "@EnemyRed_P2_BlueLeft",
+            "@EnemyRed_P1_BlueRight"
+      ],
+      "when_enemy_blue": [
+            "@EnemyBlue_P4_BlueBase",
+            "@EnemyBlue_P3_BlueOutpost",
+            "@EnemyBlue_P2_RedLeft",
+            "@EnemyBlue_P1_RedRight"
+      ]
+}
+
+
+##############################下面的标定数据全部为新的标定数据##############################
+
+
+MindVision:
+
+%YAML:1.0
+K_0: !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: d
+   data: [2629.3, -5.2, 702.8,
+          0.0, 2626.1, 499.3,
+          0.0, 0.0, 1.0]
+C_0: !!opencv-matrix
+   rows: 1
+   cols: 5
+   dt: d
+   data: [0.0228, 1.2328, -0.0013, 0.0071, -5.3877]
+E_0: !!opencv-matrix
+   rows: 4
+   cols: 4
+   dt: d
+   data: [0.999246968, -0.037858584, 0.008379772, 0.054859053,
+          0.008679872, 0.009370770, -0.998234848, 0.101863458,
+          0.037785264, 0.997554648, 0.009694082, 0.187560067,
+          0.0, 0.0, 0.0, 1.0]
+
+
+
+HikRobot:
+
+%YAML:1.0
+K_0: !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: d
+   data: [ 14583.333, 0.0, 2736.0,
+           0.0, 14583.333, 1824.0,
+           0.0, 0.0, 1.0 ]
+C_0: !!opencv-matrix
+   rows: 1
+   cols: 5
+   dt: d
+   data: [-0.007448, 1.918364, 0.013326, 0.067987, 0.000000]
+E_0: !!opencv-matrix
+   rows: 4
+   cols: 4
+   dt: d
+   data: [ 0.8622522317388803,  0.1982081847687224,  -0.46608433180274184,  -0.023475482602792235,
+           -0.5053776252480338,  0.2760461495904495,  -0.8175524320769556,  -0.08243805948816209,
+           -0.03338479833664321,  0.9404850018936906,  0.3381913902704302,  -0.007256817073974479,
+           0.0,  0.0,  0.0,  1.0 ]
+
+
+
+
+使用联合标定工具标定结果-https://github.com/koide3/direct_visual_lidar_calibration
+
+Lidar&CameraJointCalibration:
+
+----------------------------
+
+{
+  "camera": {
+    "camera_model": "plumb_bob",
+    "distortion_coeffs": [
+      -0.007448,
+      1.918364,
+      0.013326,
+      0.067987,
+      0.0
+    ],
+    "intrinsics": [
+      16884.29994,
+      15591.99151,
+      2236.90122,
+      3277.61826
+    ]
+  },
+  "meta": {
+    "bag_names": [
+      "BAG_01.bag",
+      "BAG_02.bag",
+      "BAG_03.bag",
+      "BAG_04.bag",
+      "BAG_05.bag",
+      "BAG_06.bag",
+      "BAG_07.bag",
+      "BAG_08.bag",
+      "BAG_09.bag",
+      "BAG_10.bag",
+      "BAG_11.bag",
+      "BAG_12.bag",
+      "BAG_13.bag",
+      "BAG_14.bag",
+      "BAG_15.bag",
+      "BAG_16.bag"
+    ],
+    "camera_info_topic": "/camera/camera_info",
+    "data_path": "/tmp/input_bags",
+    "image_topic": "/camera/image",
+    "intensity_channel": "intensity",
+    "points_topic": "/cloudpoints"
+  },
+  "results": {
+    "init_T_lidar_camera": [
+      -0.01998956687748432,
+      -1.492429256439209,
+      0.17668409645557404,
+      -0.7382927798710558,
+      -0.011277130902966207,
+      -0.003266643707578178,
+      0.6743781719606026
+    ]
+  }
+}
+
+
+
+T_lidar_camera 是外参矩阵，描述相机坐标系到 LiDAR 坐标系的空间变换（平移 + 旋转），用来把相机点投到 LiDAR 系里

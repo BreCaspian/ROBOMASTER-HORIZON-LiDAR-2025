@@ -1,0 +1,1 @@
+cmd_/opt/MVS/driver/pcie/TransportLayer/virtualserial/modules.order := {   echo /opt/MVS/driver/pcie/TransportLayer/virtualserial/mvfgvirtualserial.ko; :; } | awk '!x[$$0]++' - > /opt/MVS/driver/pcie/TransportLayer/virtualserial/modules.order

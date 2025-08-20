@@ -1,0 +1,1 @@
+cmd_/opt/MVS/driver/pcie/TransportLayer/xof/modules.order := {   echo /opt/MVS/driver/pcie/TransportLayer/xof/xofframegrabber.ko; :; } | awk '!x[$$0]++' - > /opt/MVS/driver/pcie/TransportLayer/xof/modules.order

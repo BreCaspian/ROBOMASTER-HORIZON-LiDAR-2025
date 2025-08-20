@@ -1,0 +1,18 @@
+Instructions for installing and uninstalling Linux drivers for industrial cameras.
+===========================================================================
+
+Driver installation and uninstallation:
+===========================================================================
+（1）After installing MVS, install the driver in the/opt/MVS/driver path
+（2）Driver installation: The installation method of gige and pcie drivers is the same. The gige folder is a filter driver, and the pcie folder is a acquisition card driver. First, enter the gige or pcie path and execute “sudo/ The build.sh” command, and then execute “sudo./load.sh”
+（3）Driver Uninstallation: Uninstalling a Gige driver is the same as uninstalling a pcie driver.  Enter the Gige or pcie path and execute “sudo/ Unload.sh command”
+===========================================================================
+	
+To check whether the installation was successful:
+===========================================================================
+（1）Execute the lsmod command to check whether the following modules exist:
+	module
+	|-gevfilter(Filter drive)
+	|-gevframegrabber(GEV acquisition card driver)
+	|-cxpframegrabber(Cxp acquisition card driver)
+	|-cmlframegrabber(Cml acquisition card driver)

@@ -1,0 +1,22 @@
+#include "./RadarClass/Radar/include/Radar.h"
+
+int main(int argc, char **argv)
+{
+    ros::init(argc, argv, "radar2025");
+    ros::NodeHandle nh;
+    image_transport::ImageTransport image_transport(nh);
+    SpdLogger myLogger;
+    std::string share_path = ros::package::getPath("radar2025");
+    myLogger.registerLogger((share_path + "/logs/").c_str(), (char *)"RadarLogger");
+    Radar::Ptr myRadar = std::make_shared<Radar>();
+    myRadar->setRosNodeHandle(nh);
+    myRadar->setRosImageTransport(image_transport);
+    myRadar->setRosPackageSharedPath(share_path);
+    while (myRadar->alive())
+    {
+        myRadar->spin();
+        waitKey(1);
+    }
+    cout << "---------Program END---------" << endl;
+    return 0;
+}

@@ -1,0 +1,1 @@
+cmd_/opt/MVS/driver/pcie/TransportLayer/cxp/Module.symvers := sed 's/\.ko$$/\.o/' /opt/MVS/driver/pcie/TransportLayer/cxp/modules.order | scripts/mod/modpost -m -a  -o /opt/MVS/driver/pcie/TransportLayer/cxp/Module.symvers -e -i Module.symvers   -T -

@@ -1,0 +1,8 @@
+<launch>
+    <rosparam command="load" file="$(find radar2025)/Config/default.yaml" /> 
+    <param name="pcd_path" type="string" value="$(find radar2025)/resources/pcds.txt"/>
+    <node pkg="radar2025" type="offline_point_cloud_publisher" name="point_cloud_node" output="screen"></node>
+    <node pkg="radar2025" type="gui_node" name="gui_node" output="screen"></node>
+    <node name="radar2025" pkg="radar2025" type="radar2025" output="screen" respawn="false"/>
+
+</launch>

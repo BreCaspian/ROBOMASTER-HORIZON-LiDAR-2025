@@ -1,0 +1,1 @@
+cmd_/opt/MVS/driver/gige/TransportLayer/Module.symvers := sed 's/\.ko$$/\.o/' /opt/MVS/driver/gige/TransportLayer/modules.order | scripts/mod/modpost -m -a  -o /opt/MVS/driver/gige/TransportLayer/Module.symvers -e -i Module.symvers   -T -

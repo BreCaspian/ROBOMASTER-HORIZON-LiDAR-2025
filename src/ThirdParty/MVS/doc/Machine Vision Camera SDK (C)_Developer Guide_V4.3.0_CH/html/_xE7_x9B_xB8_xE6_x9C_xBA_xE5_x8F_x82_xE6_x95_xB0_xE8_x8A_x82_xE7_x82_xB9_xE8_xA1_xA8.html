@@ -1,0 +1,565 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="custom-style.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+	<div style="overflow: hidden;">
+		<div style="height: 57px;min-width: 1039px;background-size: auto 100%;background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABwgAAAABCAYAAADKO/rAAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAABRSURBVFhH7dUxCoBADEXB5LK5/w1iIaLIrsgWNs50Sf/4WVUd8HOZGd1nCqMbGNMPrNMPrJv1cvz0A3OjfuwPvDPrxf7A7t7IlX7gmX74VsQGguw4S6+UnSYAAAAASUVORK5CYII=');">
+			<img src="titleleft.png" style="float: left;"/>
+			<img src="titleright.png" alt="" style="float: right;" />
+		</div>
+	</div>
+<!-- 制作者 Doxygen 1.8.15 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>法律声明</span></a></li>
+      <li><a href="_xE9_xA6_x96_xE9_xA1_xB5.html"><span>首页</span></a></li>
+      <li><a href="_xE6_x9B_xB4_xE6_x96_xB0_xE8_xAE_xB0_xE5_xBD_x95.html"><span>更新记录</span></a></li>
+      <li><a href="_xE7_x8E_xAF_xE5_xA2_x83_xE9_x85_x8D_xE7_xBD_xAE.html"><span>环境配置</span></a></li>
+      <li><a href="_xE7_xBC_x96_xE7_xA8_x8B_xE5_xBC_x95_xE5_xAF_xBC.html"><span>编程引导</span></a></li>
+      <li><a href="modules.html"><span>接口说明</span></a></li>
+      <li><a href="annotated.html"><span>结构体定义</span></a></li>
+      <li><a href="_xE7_x9B_xB8_xE6_x9C_xBA_xE5_x8F_x82_xE6_x95_xB0_xE8_x8A_x82_xE7_x82_xB9_xE8_xA1_xA8.html"><span>相机参数节点表</span></a></li>
+      <li><a href="examples.html"><span>示例程序</span></a></li>
+      <li><a href="_xE9_x94_x99_xE8_xAF_xAF_xE7_xA0_x81.html"><span>状态码</span></a></li>
+      <li><a href="_xE5_xB8_xB8_xE8_xA7_x81_xE9_x97_xAE_xE9_xA2_x98.html"><span>常见问题</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="PageDoc"><div class="contents">
+<div class="textblock"><div class="header" style="margin-left:-12px;margin-top:-10px;margin-right:-8px;"> <div class="headertitle"> <div class="title">相机参数节点表</div> </div> </div> <div id="hikvision"> </div><div id="hikvision">&#160;</div><div id="hikvision"> </div><div id="hikvision">本表格中包含了大部分相机的所有节点以及每个节点的名称、数据类型、访问模式等。相机不是所有的节点都支持，请以客户端中的参数列表为准。</div><div id="hikvision"> </div><div id="hikvision">相机的参数持续更新中，表中可能不包含相机最新固件的支持的参数。</div><div id="hikvision"> </div><div id="hikvision">&#160;</div><div id="hikvision"> <table style="margin: 0 0 0 40px;" class="doxtable">
+<tr>
+<th width="“20%”"><b> 功能 </b><br />
+ </th><th width="“25%”"><b> 名称（ _GetNode: key 参数） </b> </th><th width="“5%”"><b> 数据类型 </b> </th><th width="“20%”"><b> 数值范围定义 </b> </th><th width="“5%”"><b> 访问模式 </b> </th><th width="“25%”"><b> 描述 </b>  </th></tr>
+<tr>
+<td rowspan="28"><b> Device Control </b> </td><td>DeviceType  </td><td>IEnumeration  </td><td>0:Transmitter <br />
+ 1:Receiver <br />
+ 2:Transceiver <br />
+ 3:Peripheral  </td><td>R  </td><td>设备类型   </td></tr>
+<tr>
+<td>DeviceScanType  </td><td>IEnumeration  </td><td>0:Areascan <br />
+ 1:Linescan  </td><td>R  </td><td>设备 sensor 的扫描方式，表明是线阵相机还是面阵相机   </td></tr>
+<tr>
+<td>DeviceVendorName  </td><td>IString  </td><td>任意空终止字符串  </td><td>R  </td><td>设备的制造商名称   </td></tr>
+<tr>
+<td>DeviceModelName  </td><td>IString  </td><td>任意空终止字符串  </td><td>R  </td><td>设备型号   </td></tr>
+<tr>
+<td>DeviceManufacturerInfo  </td><td>IString  </td><td>任意空终止字符串  </td><td>R  </td><td>设备的制造商信息   </td></tr>
+<tr>
+<td>DeviceVersion  </td><td>IString  </td><td>任意空终止字符串  </td><td>R  </td><td>设备版本   </td></tr>
+<tr>
+<td>DeviceFirmwareVersion  </td><td>IString  </td><td>任意空终止字符串  </td><td>R  </td><td>固件版本   </td></tr>
+<tr>
+<td>DeviceSerialNumber  </td><td>IString  </td><td>任意空终止字符串  </td><td>R  </td><td>设备序列号   </td></tr>
+<tr>
+<td>DeviceID  </td><td>IString  </td><td>任意空终止字符串  </td><td>R  </td><td>设备 ID   </td></tr>
+<tr>
+<td>DeviceUserID  </td><td>IString  </td><td>任意空终止字符串  </td><td>R/W  </td><td>用户自定义的名称   </td></tr>
+<tr>
+<td>DeviceUptime  </td><td>Iinteger  </td><td>≥ 0  </td><td>R  </td><td>设备运行时间   </td></tr>
+<tr>
+<td>BoardDeviceType  </td><td>Iinteger  </td><td>≥ 0  </td><td>R  </td><td>设备类型   </td></tr>
+<tr>
+<td>DeviceConnectionSelector  </td><td>Iinteger  </td><td>≥ 0  </td><td>R/(W)  </td><td>设备连接选择   </td></tr>
+<tr>
+<td>DeviceConnectionSpeed  </td><td>Iinteger  </td><td>≥ 0 ，单位 Mbps  </td><td>R  </td><td>设备连接速度   </td></tr>
+<tr>
+<td>DeviceLinkSelector  </td><td>IInteger  </td><td>≥ 0  </td><td>R/(W)  </td><td>设备连接选择   </td></tr>
+<tr>
+<td>DeviceLinkSpeed  </td><td>IInteger  </td><td>≥ 0  </td><td>R  </td><td>传输链路速度   </td></tr>
+<tr>
+<td>DeviceLinkConnectionCount  </td><td>IInteger  </td><td>≥ 0  </td><td>R  </td><td>设备连接数量   </td></tr>
+<tr>
+<td>DeviceLinkHeartbeatMode  </td><td>IEnumeration  </td><td>0:On <br />
+ 1:Off  </td><td>R/W  </td><td>是否需要心跳   </td></tr>
+<tr>
+<td>DeviceStreamChannelCount  </td><td>Iinteger  </td><td>≥ 0  </td><td>R  </td><td>流通道数量   </td></tr>
+<tr>
+<td>DeviceStreamChannelSelector  </td><td>Iinteger  </td><td>≥ 0  </td><td>R/(W)  </td><td>流通道选择   </td></tr>
+<tr>
+<td>DeviceStreamChannelType  </td><td>Ienumeration  </td><td>0:Transmitter <br />
+1:Receiver  </td><td>R  </td><td>流通道类型   </td></tr>
+<tr>
+<td>DeviceStreamChannelLink  </td><td>Iinteger  </td><td>≥ 0  </td><td>R  </td><td>流通道连接数量   </td></tr>
+<tr>
+<td>DeviceStreamChannelEndianness  </td><td>Ienumeration  </td><td>0: Little <br />
+ 1: Big  </td><td>R  </td><td>图像数据的字节序   </td></tr>
+<tr>
+<td>DeviceStreamChannelPacketSize  </td><td>IInteger  </td><td>与相机相关。一般范围在 220-9156，步进为8 </td><td>R/(W)  </td><td>接收端流数据的包大小   </td></tr>
+<tr>
+<td>DeviceEventChannelCount  </td><td>IInteger  </td><td>≥ 0  </td><td>R  </td><td>设备支持的   </td></tr>
+<tr>
+<td>DeviceCharacterSet  </td><td>IEnumeration  </td><td>1:UTF-8 <br />
+2: ASCII  </td><td>R  </td><td>设备寄存器中使用的字符集   </td></tr>
+<tr>
+<td>DeviceReset  </td><td>ICommand  </td><td>&#160;-  </td><td>W  </td><td>重启设备   </td></tr>
+<tr>
+<td>DeviceMaxThroughput  </td><td>Iinteger  </td><td>≥ 0  </td><td>R  </td><td>设备最大吞吐量（带宽）   </td></tr>
+<tr>
+<td rowspan="18"><b> Image Format Control </b>  </td></tr>
+<tr>
+<td>WidthMax  </td><td>IInteger  </td><td>＞ 0  </td><td>R  </td><td>图像最大宽度， binning 之后的数据   </td></tr>
+<tr>
+<td>HeightMax  </td><td>IInteger  </td><td>＞ 0  </td><td>R  </td><td>图像最大高度， binning 之后的数据   </td></tr>
+<tr>
+<td>RegionSelector  </td><td>IEnumeration  </td><td>0:Region0 <br />
+ 1:Region1 <br />
+ 2:Region2 <br />
+ 8:All  </td><td>R/(W)  </td><td>ROI 选择器   </td></tr>
+<tr>
+<td>RegionDestination  </td><td>IEnumeration  </td><td>0:Stream0 <br />
+ 1:Stream1 <br />
+ 2:Stream2  </td><td>R/(W)  </td><td>该 ROI 对应的码流   </td></tr>
+<tr>
+<td>Width  </td><td>IInteger  </td><td>＞ 0  </td><td>R/(W)  </td><td>ROI 的宽   </td></tr>
+<tr>
+<td>Height  </td><td>IInteger  </td><td>＞ 0  </td><td>R/(W)  </td><td>ROI 的高   </td></tr>
+<tr>
+<td>OffsetX  </td><td>IInteger  </td><td>≥ 0  </td><td>R/W  </td><td>ROI 的水平方向偏移量   </td></tr>
+<tr>
+<td>OffsetY  </td><td>IInteger  </td><td>≥ 0  </td><td>R/W  </td><td>ROI 的竖直方向偏移量   </td></tr>
+<tr>
+<td>ReverseScanDirection  </td><td>Iboolean  </td><td>≥ 0  </td><td>R/(W)  </td><td>转换扫描方向   </td></tr>
+<tr>
+<td>PixelFormat  </td><td>IEnumeration  </td><td>0x01080001:Mono8 <br />
+ 0x01100003:Mono10 <br />
+ 0x010C0004:Mono10Packed <br />
+ 0x01100005:Mono12 <br />
+ 0x010C0006:Mono12Packed <br />
+ 0x01100007:Mono16 <br />
+ 0x02180014:RGB8Packed <br />
+ 0x02100032:YUV422_8 <br />
+ 0x0210001F:YUV422_8_UYVY <br />
+ 0x01080008:BayerGR8 <br />
+ 0x01080009:BayerRG8 <br />
+ 0x0108000A:BayerGB8 <br />
+ 0x0108000B:BayerBG8 <br />
+ 0x0110000e:BayerGB10 <br />
+ 0x01100012:BayerGB12 <br />
+ 0x010C002C:BayerGB12Packed  </td><td>R/(W)  </td><td>图像像素格式，不同型号的相机，支持的像素格式有差异，以实际的为准   </td></tr>
+<tr>
+<td>PixelSize  </td><td>IEnumeration  </td><td>8:Bpp8 <br />
+ 10:Bpp10 <br />
+ 12:Bpp12 <br />
+ 16:Bpp16 <br />
+ 24:Bpp24 <br />
+ 32:Bpp32  </td><td>R/(W)  </td><td>一个像素包含的比特数   </td></tr>
+<tr>
+<td>ImageCompressionMode  </td><td>IEnumeration  </td><td>0:Off <br />
+ 1:JPEG  </td><td>R/(W)  </td><td>图像压缩模式   </td></tr>
+<tr>
+<td>ImageCompressionQuality  </td><td>Iinteger  </td><td>≥ 50  </td><td>R/(W)  </td><td>图像压缩质量   </td></tr>
+<tr>
+<td>TestPatternGeneratorSelector  </td><td>IEnumeration  </td><td>8:Sensor <br />
+ 0:Region0 <br />
+ 1:Region1 <br />
+ 2:Region2  </td><td>R/(W)  </td><td>测试图像生成器选择   </td></tr>
+<tr>
+<td>TestPattern  </td><td>IEnumeration  </td><td>0 :Off <br />
+ 1:Black <br />
+ 2:White <br />
+ 3:GreyHorizontalRamp <br />
+ 4:GreyVerticalRamp <br />
+ 5:GreyHorizontalRampMoving <br />
+ 6:GreyVerticalRampMoving <br />
+ 7:HorizontalLineMoving <br />
+ 8:VerticalLineMoving <br />
+ 9:ColorBar <br />
+ 10:FrameCounter <br />
+ 11:MonoBar <br />
+ 12:TestImage12 <br />
+ 13:TestImage13 <br />
+ 14:ObliqueMonoBar <br />
+ 15:ObliqueColorBar <br />
+ 16:GradualMonoBar  </td><td>R/(W)  </td><td>测试图像选择   </td></tr>
+<tr>
+<td>FrameSpecInfoSelector  </td><td>IEnumeration  </td><td>0 :Timestamp <br />
+ 1:Gain <br />
+ 2:Exposure <br />
+ 3:BrightnessInfo <br />
+ 4:WhiteBalance <br />
+ 5:Framecounter <br />
+ 6:ExtTriggerCount <br />
+ 7:LineInputOutput <br />
+ 8:ROIPosition  </td><td>R/(W)  </td><td>水印信息选择   </td></tr>
+<tr>
+<td>FrameSpecInfo  </td><td>IBoolean  </td><td>True <br />
+ False  </td><td>R/W  </td><td>是否使能该水印信息   </td></tr>
+<tr>
+<td rowspan="21"><b> Acquisition Control </b>  </td></tr>
+<tr>
+<td>AcquisitionMode  </td><td>IEnumeration  </td><td>0:SingleFrame <br />
+ 1:MultiFrame <br />
+ 2:Continuous  </td><td>R/(W)  </td><td>采集模式，单帧、多帧、连续   </td></tr>
+<tr>
+<td>AcquisitionStart  </td><td>ICommand  </td><td>&#160;- </td><td>W  </td><td>开始取流   </td></tr>
+<tr>
+<td>AcquisitionStop  </td><td>ICommand  </td><td>&#160;- </td><td>W  </td><td>结束取流   </td></tr>
+<tr>
+<td>AcquisitionBurstFrameCount  </td><td>IInteger  </td><td>≥ 0  </td><td>R/W  </td><td>一次触发采集的帧数   </td></tr>
+<tr>
+<td>AcquisitionLineRate  </td><td>IInteger  </td><td>≥ 1  </td><td>R/W  </td><td>行频设置   </td></tr>
+<tr>
+<td>AcquisitionLineRateEnable  </td><td>IBoolean  </td><td>True <br />
+ False  </td><td>R/W  </td><td>行频控制使能   </td></tr>
+<tr>
+<td>ResultingLineRate  </td><td>IInteger  </td><td>≥ 0，单位 hz  </td><td>R  </td><td>实际行频   </td></tr>
+<tr>
+<td>ResultingFrameRate  </td><td>IFloat  </td><td>≥ 0.0 ，单位 fps  </td><td>R  </td><td>相机的实际采集帧率   </td></tr>
+<tr>
+<td>TriggerSelector  </td><td>IEnumeration  </td><td>0:AcquisitionStart <br />
+ 1:AcquisitionEnd <br />
+ 2:AcquisitionActive <br />
+ 3:FrameStart <br />
+ 4:FrameEnd <br />
+ 5:FrameActive <br />
+ 6:FrameBurstStart <br />
+ 7:FrameBurstEnd <br />
+ 8:FrameBurstActive <br />
+ 9:LineStart <br />
+ 10:ExposureStart <br />
+ 11:ExposureEnd <br />
+ 12:ExposureActive  </td><td>R/W  </td><td>触发事件选择   </td></tr>
+<tr>
+<td>TriggerMode  </td><td>IEnumeration  </td><td>0:Off <br />
+ 1:On  </td><td>R/W  </td><td>触发模式   </td></tr>
+<tr>
+<td>TriggerSource  </td><td>IEnumeration  </td><td>0:Line0 <br />
+ 1:Line1 <br />
+ 2:Line2 <br />
+ 3.Line3 <br />
+ 4:Counter0 <br />
+ 7:Software <br />
+ 8:FrequencyConverter  </td><td>R/W  </td><td>触发源   </td></tr>
+<tr>
+<td>TriggerActivation  </td><td>IEnumeration  </td><td>0:RisingEdge <br />
+ 1:FallingEdge <br />
+ 2:LevelHigh <br />
+ 3:LevelLow  </td><td>R/W  </td><td>触发上升沿、下降沿、高电平、低电平等   </td></tr>
+<tr>
+<td>TriggerDelay  </td><td>IFloat  </td><td>≥ 0.0 ，单位 us  </td><td>R/W  </td><td>触发延时   </td></tr>
+<tr>
+<td>ExposureMode  </td><td>IEnumeration  </td><td>0:Timed <br />
+ 1:TriggerWidth  </td><td>R/W  </td><td>曝光模式选择   </td></tr>
+<tr>
+<td>ExposureTime  </td><td>IFloat  </td><td>≥ 0.0 ，单位 us  </td><td>R/W  </td><td>曝光时间   </td></tr>
+<tr>
+<td>ExposureAuto  </td><td>IEnumeration  </td><td>0:Off <br />
+ 1:Once <br />
+ 2:Continuous  </td><td>R/W  </td><td>自动曝光   </td></tr>
+<tr>
+<td>AutoExposureTimeLowerLimit  </td><td>IInteger  </td><td>≥ 0 ，单位 us  </td><td>R/(W)  </td><td>自动曝光时间下限   </td></tr>
+<tr>
+<td>AutoExposureTimeupperLimit  </td><td>IInteger  </td><td>≥ 0 ，单位 us  </td><td>R/(W)  </td><td>自动曝光时间上限   </td></tr>
+<tr>
+<td>FrameTimeoutEnable  </td><td>IBoolean </td><td>0:Off <br />
+ 1:On  </td><td>R/W  </td><td>帧超时使能   </td></tr>
+<tr>
+<td>FrameTimeoutTime  </td><td>Iinteger  </td><td>≥ 87 ，单位 ms  </td><td>R/W  </td><td>帧超时时间   </td></tr>
+<tr>
+<td rowspan="27"><b> Analog Control </b>  </td></tr>
+<tr>
+<td>Gain  </td><td>IFloat </td><td>≥ 0.0 ，单位 dB  </td><td>R/W  </td><td>增益值   </td></tr>
+<tr>
+<td>GainAuto  </td><td>IEnumeration </td><td>0:Off <br />
+ 1:Once <br />
+ 2:Continuous  </td><td>R/W  </td><td>自动增益   </td></tr>
+<tr>
+<td>AutoGainLowerLimit  </td><td>IFloat  </td><td>≥ 0.0 ，单位 dB  </td><td>R/W  </td><td>自动增益值下限   </td></tr>
+<tr>
+<td>AutoGainupperLimit  </td><td>IFloat  </td><td>≥ 0.0 ，单位 dB  </td><td>R/W  </td><td>自动增益值上限   </td></tr>
+<tr>
+<td>ADCGainEnable  </td><td>IBoolean  </td><td>0:Off <br />
+ 1:On  </td><td>R/W  </td><td>ADC 增益使能   </td></tr>
+<tr>
+<td>DigitalShift  </td><td>IFloat  </td><td>≥ 0.0  </td><td>R  </td><td>数字偏移调节   </td></tr>
+<tr>
+<td>DigitalShiftEnable  </td><td>IBoolean  </td><td>0:Off <br />
+ 1:On  </td><td>R/W  </td><td>数字偏移使能   </td></tr>
+<tr>
+<td>Brightness  </td><td>Iinteger  </td><td>≥ 0  </td><td>R/W  </td><td>亮度   </td></tr>
+<tr>
+<td>BlackLevel  </td><td>IFloat  </td><td>≥ 0.0  </td><td>R/W  </td><td>黑电平调节   </td></tr>
+<tr>
+<td>BlackLevelEnable  </td><td>IBoolean  </td><td>0:Off <br />
+ 1:On  </td><td>R/W  </td><td>黑电平调节使能   </td></tr>
+<tr>
+<td>BalanceWhiteAuto  </td><td>IEnumeration  </td><td>0:Off <br />
+ 1:Continuous <br />
+ 2:Once  </td><td>R/W  </td><td>自动白平衡   </td></tr>
+<tr>
+<td>BalanceRatioSelector  </td><td>Ienumeration  </td><td>0:Red <br />
+ 1:Green <br />
+ 2:Blue  </td><td>R  </td><td>白平衡比例选择   </td></tr>
+<tr>
+<td>BalanceRatio  </td><td>Iinteger  </td><td>≥ 0  </td><td>R  </td><td>白平衡值   </td></tr>
+<tr>
+<td>Gamma  </td><td>IFloat  </td><td>＞ 0.0  </td><td>R/W  </td><td>伽马调节   </td></tr>
+<tr>
+<td>GammaSelector  </td><td>Ienumeration  </td><td>1:User <br />
+ 2:sRGB  </td><td>R/W  </td><td>Gamma 选择   </td></tr>
+<tr>
+<td>GammaEnable  </td><td>IBoolean  </td><td>0:Off <br />
+ 1:On  </td><td>R/W  </td><td>Gamma 使能   </td></tr>
+<tr>
+<td>Hue  </td><td>Iinteger  </td><td>≥ 0  </td><td>R  </td><td>色度值调节   </td></tr>
+<tr>
+<td>HueEnable  </td><td>Iboolean  </td><td>0:Off <br />
+ 1:On  </td><td>R/W  </td><td>色度使能   </td></tr>
+<tr>
+<td>Saturation  </td><td>Iinteger  </td><td>≥ 0  </td><td>R  </td><td>饱和度值调节   </td></tr>
+<tr>
+<td>SaturationEnable  </td><td>Iboolean  </td><td>0:Off <br />
+ 1:On  </td><td>R/W  </td><td>饱和度使能   </td></tr>
+<tr>
+<td>AutoFunctionAOISelector  </td><td>Ienumeration  </td><td>0:AOI1 <br />
+ 1:AOI2  </td><td>R/W  </td><td>自动 AOI 选择   </td></tr>
+<tr>
+<td>AutoFunctionAOIWidth  </td><td>Iinteger  </td><td>≥ 0  </td><td>R/W  </td><td>自动 AOI 宽   </td></tr>
+<tr>
+<td>AutoFunctionAOIHeight  </td><td>Iinteger  </td><td>≥ 0  </td><td>R/W  </td><td>自动 AOI 高   </td></tr>
+<tr>
+<td>AutoFunctionAOIOffsetX  </td><td>Iinteger  </td><td>≥ 0  </td><td>R  </td><td>自动 AOI 水平方向偏移   </td></tr>
+<tr>
+<td>AutoFunctionAOIUsageIntensity  </td><td>Iboolean  </td><td>0:Off <br />
+ 1:On  </td><td>R/W  </td><td>根据 AOI 区域自动曝光   </td></tr>
+<tr>
+<td>AutoFunctionAOIUsageWhiteBalance  </td><td>Iboolean  </td><td>0:Off <br />
+ 1:On  </td><td>R  </td><td>根据 AOI 区域自动白平衡   </td></tr>
+<tr>
+<td rowspan="5"><b> LUT Control </b>  </td></tr>
+<tr>
+<td>LUTSelector  </td><td>IEnumeration  </td><td>0:Luminance <br />
+ 1:Red <br />
+ 2:Green <br />
+ 3:Blue  </td><td>R/W  </td><td>亮度、 R\G\B   </td></tr>
+<tr>
+<td>LUTEnable  </td><td>IBoolean  </td><td>True <br />
+ False  </td><td>R/W  </td><td>使能   </td></tr>
+<tr>
+<td>LUTIndex  </td><td>IInteger  </td><td>≥ 0  </td><td>R/W  </td><td>索引号   </td></tr>
+<tr>
+<td>LUTValue  </td><td>IInteger  </td><td>Device-specific  </td><td>R/W  </td><td>值   </td></tr>
+<tr>
+<td rowspan="11"><b> Encoder Control </b>  </td></tr>
+<tr>
+<td>EncoderSelector  </td><td>IEnumeration  </td><td>0:Encoder0 <br />
+ 1:Encoder1 <br />
+ 2:Encoder2  </td><td>R/W  </td><td>编码器选择   </td></tr>
+<tr>
+<td>EncoderSourceA  </td><td>IEnumeration  </td><td>0:Line0 <br />
+ 1:Line1 <br />
+ 2:Line2 <br />
+ 3:Line3  </td><td>R/W  </td><td>编码器 A 源选择   </td></tr>
+<tr>
+<td>EncoderSourceB  </td><td>IEnumeration  </td><td>0:Line0 <br />
+ 1:Line1 <br />
+ 2:Line2 <br />
+ 3:Line3  </td><td>R/W  </td><td>编码器 B 源选择   </td></tr>
+<tr>
+<td>EncoderTriggerMode  </td><td>IEnumeration  </td><td>0:AnyDirection <br />
+ 1:ForwardOnly  </td><td>R/W  </td><td>编码器触发模式   </td></tr>
+<tr>
+<td>EncoderCounterMode  </td><td>IEnumeration  </td><td>0:IgnoreDirection <br />
+ 1:FollowDirection  </td><td>R/W  </td><td>编码器计数模式   </td></tr>
+<tr>
+<td>EncoderCounter  </td><td>Iinteger  </td><td>≥ 0  </td><td>R  </td><td>编码器计数器值调节   </td></tr>
+<tr>
+<td>EncoderCounterMax  </td><td>Iinteger  </td><td>≥ 1  </td><td>R/W  </td><td>编码器计数器最大值   </td></tr>
+<tr>
+<td>EncoderCounterReset  </td><td>Icommand  </td><td>-  </td><td>R/W  </td><td>编码器计数器复位   </td></tr>
+<tr>
+<td>EncoderMaxReverseCounter  </td><td>Iinteger  </td><td>≥ 1  </td><td>R/W  </td><td>编码器最大反转计数器值   </td></tr>
+<tr>
+<td>EncoderReverseCounterReset  </td><td>Icommand  </td><td>-  </td><td>R/W  </td><td>编码器反转计数器复位   </td></tr>
+<tr>
+<td rowspan="6"><b> Frequency Converter Control </b>  </td></tr>
+<tr>
+<td>InputSource  </td><td>Ienumeration  </td><td>0:Line0 <br />
+ 1:Line1 <br />
+ 2:Line2 <br />
+ 3:Line3  </td><td>R/W  </td><td>分频器输入源   </td></tr>
+<tr>
+<td>SignalAlignment  </td><td>Ienumeration  </td><td>0:RisingEdge <br />
+ 1:FallingEdge  </td><td>R/W  </td><td>分频器信号方向   </td></tr>
+<tr>
+<td>PreDivider  </td><td>Iinteger  </td><td>≥ 1  </td><td>R/W  </td><td>前置分频器调节   </td></tr>
+<tr>
+<td>Multiplier  </td><td>Iinteger  </td><td>≥ 1  </td><td>R/W  </td><td>倍频器调节   </td></tr>
+<tr>
+<td>PostDivider  </td><td>Iinteger  </td><td>≥ 1  </td><td>R/W  </td><td>后置分频器调节   </td></tr>
+<tr>
+<td rowspan="5"><b> Shading Correction </b>  </td></tr>
+<tr>
+<td>ShadingSelector  </td><td>IEnumeration  </td><td>0:FPNCCorrection <br />
+ 1:PRNUCCorrection  </td><td>R/W  </td><td>明暗场校正选择   </td></tr>
+<tr>
+<td>ActivateShading  </td><td>ICommand  </td><td>-  </td><td>R/(W)  </td><td>主动校正   </td></tr>
+<tr>
+<td>NUCEnable  </td><td>IBoolean  </td><td>0:Off <br />
+ 1:ON  </td><td>R/W  </td><td>NUC 使能开关   </td></tr>
+<tr>
+<td>PRNUCEnable  </td><td>IBoolean  </td><td>0:Off <br />
+ 1:ON  </td><td>R/W  </td><td>PRNUC 状态开关   </td></tr>
+<tr>
+<td rowspan="6"><b> Digital IO Control </b>  </td></tr>
+<tr>
+<td>LineSelector  </td><td>IEnumeration  </td><td>0:Line0 <br />
+ 1:Line1 <br />
+ 2:Line2 <br />
+ 3:Line3 <br />
+ 4:Line4  </td><td>R/W  </td><td>I/O 选择   </td></tr>
+<tr>
+<td>LineMode  </td><td>IEnumeration </td><td>0:Input <br />
+ 1:Output <br />
+ 2:Trigger <br />
+ 8:Strobe  </td><td>R/(W)  </td><td>I/O 模式   </td></tr>
+<tr>
+<td>LineStatus  </td><td>IBoolean  </td><td>-  </td><td>R/(W)  </td><td>I/O 状态   </td></tr>
+<tr>
+<td>LineStatusAll  </td><td>IInteger  </td><td>≥ 0  </td><td>R  </td><td>所有 I/O 状态   </td></tr>
+<tr>
+<td>LineDebouncerTime  </td><td>IInteger  </td><td>-  </td><td>R/W  </td><td>I/O 去抖时间   </td></tr>
+<tr>
+<td rowspan="42"><b> Transport Layer Control </b>  </td></tr>
+<tr>
+<td>PayloadSize  </td><td>IInteger  </td><td>≥ 0  </td><td>R  </td><td>一帧数据的大小   </td></tr>
+<tr>
+<td>GevVersionMajor  </td><td>IInteger  </td><td>GEV 主版本号  </td><td>R  </td><td>GEV 主版本号   </td></tr>
+<tr>
+<td>GevVersionMinor  </td><td>IInteger  </td><td>GEV 副版本号  </td><td>R  </td><td>GEV 子版本号   </td></tr>
+<tr>
+<td>GevDeviceModeIsBigEndian  </td><td>IBoolean  </td><td>0:not BigEndian <br />
+ 1:Is BigEndian  </td><td>R  </td><td>大端   </td></tr>
+<tr>
+<td>GevDeviceModeCharacterSet  </td><td>IEnumeration  </td><td>1:UTF8  </td><td>R  </td><td>字符集   </td></tr>
+<tr>
+<td>GevInterfaceSelector  </td><td>IInteger  </td><td>&gt;=0  </td><td>R/(W)  </td><td>GEV 接口数   </td></tr>
+<tr>
+<td>GevMACAddress  </td><td>IInteger  </td><td>Mac 地址  </td><td>R  </td><td>MAC 地址   </td></tr>
+<tr>
+<td>GevCurrentIPConfigurationLLA  </td><td>IBoolean  </td><td>0:Off <br />
+ 1:On  </td><td>R  </td><td>IP 是否为 LLA   </td></tr>
+<tr>
+<td>GevCurrentIPConfigurationDHCP  </td><td>IBoolean  </td><td>0:Off <br />
+ 1:On  </td><td>R/W  </td><td>IP 是否为 DHCP   </td></tr>
+<tr>
+<td>GevCurrentIPConfigurationPersistentIP  </td><td>IBoolean  </td><td>0:Off <br />
+ 1:On  </td><td>R/W  </td><td>IP 是否为静态 IP   </td></tr>
+<tr>
+<td>GevCurrentIPAddress  </td><td>Iinteger  </td><td>ip 地址  </td><td>R  </td><td>IP 地址   </td></tr>
+<tr>
+<td>GevCurrentSubnetMask  </td><td>Iinteger  </td><td>子网掩码  </td><td>R  </td><td>子网掩码   </td></tr>
+<tr>
+<td>GevCurrentDefaultGateway  </td><td>Iinteger  </td><td>默认网关  </td><td>R  </td><td>默认网关   </td></tr>
+<tr>
+<td>GevFirstURL  </td><td>IString  </td><td>- </td><td>R  </td><td>XML 第一选择路径   </td></tr>
+<tr>
+<td>GevSecondURL  </td><td>IString  </td><td>- </td><td>R  </td><td>XML 第二选择路径   </td></tr>
+<tr>
+<td>GevNumberOfInterfaces  </td><td>Iinteger  </td><td>≥ 0  </td><td>R  </td><td>GEV 接口数   </td></tr>
+<tr>
+<td>GevPersistentIPAddress  </td><td>Iinteger  </td><td>≥ 0  </td><td>R/W  </td><td>静态 IP 地址   </td></tr>
+<tr>
+<td>GevPersistentSubnetMask  </td><td>Iinteger  </td><td>≥ 0  </td><td>R/W  </td><td>静态子网掩码   </td></tr>
+<tr>
+<td>GevPersistentDefaultGateway  </td><td>Iinteger  </td><td>≥ 0  </td><td>R/W  </td><td>静态默认网关   </td></tr>
+<tr>
+<td>GevLinkSpeed  </td><td>IInteger  </td><td>≥ 0  </td><td>R  </td><td>网络速率   </td></tr>
+<tr>
+<td>GevMessageChannelCount  </td><td>Iinteger  </td><td>≥ 0  </td><td>R  </td><td>消息通道数   </td></tr>
+<tr>
+<td>GevStreamChannelCount  </td><td>Iinteger  </td><td>≥ 0  </td><td>R  </td><td>流通道   </td></tr>
+<tr>
+<td>GevHeartbeatTimeout  </td><td>Iinteger  </td><td>≥ 0  </td><td>R/W  </td><td>心跳超时时间   </td></tr>
+<tr>
+<td>GevGVCPHeartbeatDisable  </td><td>IBoolean  </td><td>0:Off <br />
+ 1:On  </td><td>R/W  </td><td>关闭心跳   </td></tr>
+<tr>
+<td>GevTimestampTickFrequency  </td><td>Iinteger  </td><td>≥ 0 ，单位 hz  </td><td>R  </td><td>时间戳频率   </td></tr>
+<tr>
+<td>GevTimestampControlLatch  </td><td>ICommand  </td><td>- </td><td>W  </td><td>获取时间戳   </td></tr>
+<tr>
+<td>GevTimestampControlReset  </td><td>ICommand  </td><td>- </td><td>W  </td><td>复位时间戳   </td></tr>
+<tr>
+<td>GevTimestampControlLatchReset  </td><td>ICommand  </td><td>- </td><td>W  </td><td>复位时间戳同时获取时间戳   </td></tr>
+<tr>
+<td>GevTimestampValue  </td><td>Iinteger  </td><td>- </td><td>R  </td><td>时间戳值   </td></tr>
+<tr>
+<td>GevCCP  </td><td>IEnumeration  </td><td>0:OpenAcess <br />
+ 1:ExclusiveAccess <br />
+ 2:ControlAccess  </td><td>R/W  </td><td>App 端的控制权限   </td></tr>
+<tr>
+<td>GevStreamChannelSelector  </td><td>Iinteger  </td><td>&gt;=0  </td><td>R/W  </td><td>流通道选择   </td></tr>
+<tr>
+<td>GevSCPInterfaceIndex  </td><td>Iinteger  </td><td>&gt;=0  </td><td>R  </td><td>GEV 接口索引   </td></tr>
+<tr>
+<td>GevSCPHostPort  </td><td>Iinteger  </td><td>&gt;=0  </td><td>R/(W)  </td><td>主机端口   </td></tr>
+<tr>
+<td>GevSCPDirection  </td><td>Iinteger  </td><td>&gt;=0  </td><td>R  </td><td>表明流通道方向   </td></tr>
+<tr>
+<td>GevSCPSFireTestPacket  </td><td>IBoolean  </td><td>0:Off <br />
+ 1:On  </td><td>R/(W)  </td><td>Fire Test Packet 使能   </td></tr>
+<tr>
+<td>GevSCPSDoNotFragment  </td><td>IBoolean  </td><td>0:Off <br />
+ 1:On  </td><td>R/W  </td><td>Fire Test Packet 使能   </td></tr>
+<tr>
+<td>GevSCPSBigEndian  </td><td>IBoolean  </td><td>0:Off <br />
+ 1:On  </td><td>R  </td><td>流数据大小端   </td></tr>
+<tr>
+<td>GevSCPSPacketSize  </td><td>IInteger  </td><td>＞ 0，与相机相关。一般范围在 220-9156，步进为 8  </td><td>R/W  </td><td>网络包大小   </td></tr>
+<tr>
+<td>GevSCPD  </td><td>IInteger  </td><td>≥ 0  </td><td>R/W  </td><td>发包延时   </td></tr>
+<tr>
+<td>GevSCDA  </td><td>IInteger  </td><td>IP 地址  </td><td>R  </td><td>流数据的目的地址   </td></tr>
+<tr>
+<td>GevSCSP  </td><td>IInteger  </td><td>端口号  </td><td>R  </td><td>流数据的源端口   </td></tr>
+<tr>
+<td rowspan="6"><b> User Set Control </b>  </td></tr>
+<tr>
+<td>UserSetCurrent  </td><td>Iinteger  </td><td>&gt;=0  </td><td>R  </td><td>当前用户参数   </td></tr>
+<tr>
+<td>UserSetSelector  </td><td>IEnumeration  </td><td>0:Default <br />
+ 1:UserSet1 <br />
+ 2:UserSet2 <br />
+ 3:UserSet3  </td><td>R/W  </td><td>设置载入的参数   </td></tr>
+<tr>
+<td>UserSetLoad  </td><td>ICommand  </td><td>&#160;-  </td><td>W  </td><td>加载   </td></tr>
+<tr>
+<td>UserSetSave  </td><td>ICommand  </td><td>&#160;-  </td><td>W  </td><td>保存   </td></tr>
+<tr>
+<td>UserSetDefault  </td><td>IEnumeration  </td><td>0:Default <br />
+ 1:UserSet1 <br />
+ 2:UserSet2 <br />
+ 3:UserSet3  </td><td>R/W  </td><td>默认状态   </td></tr>
+</table>
+</div> </div></div><!-- PageDoc -->
+</div><!-- contents -->
+<!-- start footer part -->
+<div class="footer" style="text-align: right;">
+	<hr/>
+	<small></small>
+</div>
+<script>
+	// 当前选中的菜单
+	var currentMenuItem = document.querySelector('.tablist > li.current > a')
+	if (currentMenuItem) { // 子菜单情况
+	  window.parent.postMessage({
+		navHref: currentMenuItem.href
+	  }, '*')
+	} else {
+	  window.parent.postMessage({
+		url: window.location.href
+	  }, '*')
+	}
+  </script>
+</body>
+</html>

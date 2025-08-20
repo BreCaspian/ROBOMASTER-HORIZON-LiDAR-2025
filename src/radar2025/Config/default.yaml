@@ -1,0 +1,97 @@
+/radar2025:
+  EnemyType: 0 # 0 RED 1 BLUE
+  AuthPassword: "0" # 用户密码，用于串口权限
+  CameraConfig: "Config_0.SJTU.Config" # 相机配置文件名称
+  TestVideo: "SJTU.mp4" # 测试视频名称
+  CameraParam: "camera0.SJTU.yaml" # 相机参数文件
+  OnnxForArmor: "Armor.onnx" # 装甲板转换用Onnx模型
+  OnnxForCar: "Car.onnx" # 车辆转换用Onnx模型
+  EngineForArmor: "Armor.engine" # 生成的装甲板识别用TRT模型
+  EngineForCar: "Car.engine" # 生成的车辆识别用TRT模型
+  OnnxForSort: "" # Sort使用的Onnx模型
+  EngineForSort: "" # Sort使用的TRT模型
+  SerialPortName: "/dev/ttyUSB0" # 串口地址                           
+
+  # 视频录制配置
+  recorder:
+    path: "/media/H/Datasets" # 视频保存路径，相对于项目根目录
+
+  # 降采样配置
+  downsample:
+    enable: false      # 是否启用降采样功能  
+    method: "voxel_grid"  # 可选: voxel_grid, random, uniform
+    target_points: 10000  # 目标点数
+    voxel_size: 0.01     # 体素大小（仅用于体素网格降采样）
+    uniform_radius: 0.01  # 均匀降采样的搜索半径
+    adaptive_adjust: true   # 是否启用自适应调整次数 (true: 自动确定调整次数，false: 使用固定的adjust_count_max值)
+    adjust_count_max: 40   # 最大调整次数 (仅当adaptive_adjust为false时使用)
+
+  # ByteTracker配置
+  bytetracker:
+    enable: true     # 是否启用ByteTracker目标跟踪
+    frame_rate: 40    # 帧率
+    track_buffer: 35  # 跟踪缓冲区大小，决定了目标在消失多久后被视为丢失
+    track_thresh: 0.3 # 跟踪阈值，低于此阈值的检测结果将被视为低置信度样本
+    high_thresh: 0.5 # 高置信度阈值，仅高于此阈值的检测结果会生成新轨迹
+    match_thresh: 0.5  # 匹配阈值，IOU匹配时的阈值
+    use_second_match: true    # 是否使用二次匹配，启用后可以匹配低置信度检测结果
+    restore_tracks: true      # 是否恢复丢失的轨迹
+    use_kalman_filter: true   # 是否使用卡尔曼滤波器
+    fusion_weight: 0.7       # 融合权重，控制原始检测与卡尔曼滤波预测结果的融合比例 (0-1)
+    logging_interval: 500    # 日志记录间隔帧数
+
+  # UART测试配置
+  uart_test:
+    mode: 1            # 测试模式: 0=单车位置, 1=多车位置, 2=混合测试
+    interval: 100      # 测试间隔(毫秒), 范围: 10-1000
+
+/gui:
+  MapRMUC: "map3.jpg" # 地图文件名
+  CoverDepth: false # 是否默认启用深度图覆盖
+  ShowPointCloud: false # 是否默认启用点云可视化
+  UseByteTracker: false # 是否默认启用ByteTracker
+
+
+
+
+    # ============= 不同场景的ByteTracker配置方案 =============
+    # 高召回优先配置
+    # 适用场景：必须尽可能跟踪所有目标，允许一定误报
+    # 参数调整：
+    # track_thresh: 0.3      # 降低跟踪阈值，接受更多低置信度检测
+    # high_thresh: 0.5       # 降低高置信度阈值，更容易创建新轨迹
+    # match_thresh: 0.6      # 降低匹配阈值，更宽松的匹配策略
+    # use_second_match: true # 启用二次匹配，提高召回率
+    # restore_tracks: true   # 启用轨迹恢复，减少ID切换
+    # track_buffer: 40       # 增大跟踪缓冲区，延长轨迹保留时间
+
+    # 高精度优先配置
+    # 适用场景：要求跟踪精确性，避免误报，允许漏检
+    # 参数调整：
+    # track_thresh: 0.6      # 提高跟踪阈值，只接受高置信度检测
+    # high_thresh: 0.75      # 提高高置信度阈值，减少新轨迹的错误创建
+    # match_thresh: 0.8      # 提高匹配阈值，更严格的匹配策略
+    # use_second_match: false # 禁用二次匹配，避免误匹配
+    # fusion_weight: 0.8     # 提高融合权重，更依赖原始检测结果
+    # track_buffer: 20       # 减小跟踪缓冲区，更快删除不确定轨迹
+
+    # 快速移动目标配置
+    # 适用场景：目标移动速度快，帧间位置变化大
+    # 参数调整：
+    # match_thresh: 0.5      # 降低匹配阈值，适应大位移
+    # use_kalman_filter: true # 启用卡尔曼滤波器，预测快速运动
+    # fusion_weight: 0.6     # 降低融合权重，更依赖预测结果
+    # track_buffer: 45       # 增大跟踪缓冲区，避免快速移入移出视野的目标ID频繁变化
+    # frame_rate: 60         # 适应更高帧率（如果硬件支持）
+
+    # 拥挤场景配置
+    # 适用场景：多目标密集，容易ID混淆
+    # 参数调整：
+    # high_thresh: 0.7       # 提高高置信度阈值，减少ID混淆
+    # match_thresh: 0.8      # 提高匹配阈值，更严格匹配策略
+    # use_second_match: true # 启用二次匹配，解决密集场景的关联问题
+    # restore_tracks: true   # 启用轨迹恢复，减少ID切换
+    # track_buffer: 35       # 适度增大跟踪缓冲区，平衡ID稳定性和准确性
+
+
+

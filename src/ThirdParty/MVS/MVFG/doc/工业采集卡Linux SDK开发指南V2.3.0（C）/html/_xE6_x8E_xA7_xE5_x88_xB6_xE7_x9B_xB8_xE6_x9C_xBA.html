@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="custom-style.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+	<div style="overflow: hidden;">
+		<div style="height: 57px;min-width: 1039px;background-size: auto 100%;background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABwgAAAABCAYAAADKO/rAAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAABRSURBVFhH7dUxCoBADEXB5LK5/w1iIaLIrsgWNs50Sf/4WVUd8HOZGd1nCqMbGNMPrNMPrJv1cvz0A3OjfuwPvDPrxf7A7t7IlX7gmX74VsQGguw4S6+UnSYAAAAASUVORK5CYII=');">
+			<img src="titleleft.png" style="float: left;"/>
+			<img src="titleright.png" alt="" style="float: right;" />
+		</div>
+	</div>
+<!-- 制作者 Doxygen 1.8.15 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>法律声明</span></a></li>
+      <li><a href="_xE9_xA6_x96_xE9_xA1_xB5.html"><span>首页</span></a></li>
+      <li><a href="_xE6_x9B_xB4_xE6_x96_xB0_xE8_xAE_xB0_xE5_xBD_x95.html"><span>更新记录</span></a></li>
+      <li><a href="usergroup0.html"><span>编程引导</span></a></li>
+      <li><a href="modules.html"><span>接口及数据结构</span></a></li>
+      <li><a href="_xE6_x8E_xA7_xE5_x88_xB6_xE5_x8F_xB0_xE7_xA4_xBA_xE4_xBE_x8B_xE7_xA8_x8B_xE5_xBA_x8F.html"><span>示例程序</span></a></li>
+      <li><a href="_xE9_x94_x99_xE8_xAF_xAF_xE7_xA0_x81.html"><span>错误码</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="PageDoc"><div class="contents">
+<div class="textblock"><div class="header" style="margin-left:-12px;margin-top:-10px;margin-right:-8px;"> <div class="headertitle"> <div class="title">控制相机</div> </div> </div> <div id="hikvision"> <br />
+ </div><div id="hikvision">控制相机包括枚举相机、打开/关闭相机、配置相机。</div><div id="hikvision"> <ul>
+<li>
+<a href="#meijuxiangji" class="el">枚举相机</a> </li>
+<li>
+<a href="#dakaixiangji" class="el">打开相机</a> </li>
+<li>
+<a href="#guanbixiangji" class="el">关闭相机</a> </li>
+<li>
+<a href="#peizhixiangji" class="el">配置相机</a> </li>
+</ul>
+<br />
+ </div><div class="header" style="margin-left:-12px;margin-top:-10px;margin-right:-8px;"> <div class="headertitle"> <div id="meijuxiangji" class="title">枚举相机</div> </div> </div> <div id="hikvision"> <br />
+ </div><div id="hikvision">通过三步完成相机的枚举：</div><div id="hikvision"> <ol>
+<li>
+调用 <a class="el" href="group___xE7_x9B_xB8_xE6_x9C_xBA_xE6_x8E_xA5_xE5_x8F_xA3.html#ga6c88774e76403df9e0c35366be13796a" title="更新指定采集卡下的相机列表">MV_FG_UpdateDeviceList()</a> 接口，枚举指定采集卡下的相机，其返回参数pbChanged标识SDK内部的相机列表是否有更新，true表示列表有更新，false表示列表和之前一样。 </li>
+<li>
+调用 <a class="el" href="group___xE7_x9B_xB8_xE6_x9C_xBA_xE6_x8E_xA5_xE5_x8F_xA3.html#gacd122cda410e9ae7f6d38dd2f3a05f87" title="获取相机数量">MV_FG_GetNumDevices()</a> 接口，获取指定采集卡下的相机数量，其返回参数pnNumDevices标识了当前指定采集卡下的相机数量。假设该数量为N，则表示当前采集卡下共有枚举到N个相机，可以访问索引为[0，N-1]范围内的相机。 </li>
+<li>
+调用 <a class="el" href="group___xE7_x9B_xB8_xE6_x9C_xBA_xE6_x8E_xA5_xE5_x8F_xA3.html#gaf772d9419afc70679d04c89370d5bed0" title="获取相机信息">MV_FG_GetDeviceInfo()</a> 接口，获取指定采集卡下对应索引的相机基本信息，并存储在 <a class="el" href="struct_m_v___f_g___d_e_v_i_c_e___i_n_f_o.html" title="相机信息">MV_FG_DEVICE_INFO</a> 结构体中返回给用户，用户可以通过该结构体中的nDevType字段区分不同类型的相机信息。<br />
+ 下面的代码片段演示了枚举相机的过程：<br />
+ <div class="fragment"><div class="line"><span class="comment">/*更新相机列表*/</span></div><div class="line"><span class="keywordtype">bool</span> bChanged = <span class="keyword">false</span>;</div><div class="line">nRet = <a class="code" href="group___xE7_x9B_xB8_xE6_x9C_xBA_xE6_x8E_xA5_xE5_x8F_xA3.html#ga6c88774e76403df9e0c35366be13796a">MV_FG_UpdateDeviceList</a>(hInterface, &amp;bChanged);</div><div class="line">Check(nRet);</div><div class="line"></div><div class="line"><span class="comment">/*获取相机数量*/</span></div><div class="line"><span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nDeviceNum = 0;</div><div class="line">nRet = <a class="code" href="group___xE7_x9B_xB8_xE6_x9C_xBA_xE6_x8E_xA5_xE5_x8F_xA3.html#gacd122cda410e9ae7f6d38dd2f3a05f87">MV_FG_GetNumDevices</a>(hInterface, &amp;nDeviceNum);</div><div class="line">Check(nRet);</div><div class="line"><span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; nDeviceNum; i++)</div><div class="line">{</div><div class="line">    <span class="comment">/*根据索引获取相机信息*/</span></div><div class="line">    <a class="code" href="struct_m_v___f_g___d_e_v_i_c_e___i_n_f_o.html">MV_FG_DEVICE_INFO</a> stDeviceInfo = { 0 };</div><div class="line">    nRet = <a class="code" href="group___xE7_x9B_xB8_xE6_x9C_xBA_xE6_x8E_xA5_xE5_x8F_xA3.html#gaf772d9419afc70679d04c89370d5bed0">MV_FG_GetDeviceInfo</a>(hInterface, i, &amp;stDeviceInfo);</div><div class="line">    Check(nRet);</div><div class="line"></div><div class="line">    <span class="comment">// TODO：处理相机信息</span></div><div class="line">}</div></div><!-- fragment -->  </li>
+</ol>
+<br />
+ </div><div class="header" style="margin-left:-12px;margin-top:-10px;margin-right:-8px;"> <div class="headertitle"> <div id="dakaixiangji" class="title">打开相机</div> </div> </div> <div id="hikvision"> <br />
+ <ul>
+<li>
+通过调用 <a class="el" href="group___xE7_x9B_xB8_xE6_x9C_xBA_xE6_x8E_xA5_xE5_x8F_xA3.html#gaac9bf0fd2e16730ea478af2f76f11df3" title="通过索引下标打开相机">MV_FG_OpenDevice()</a> 接口，输入索引nIndex打开相机。打开成功后返回相机句柄，该句柄可用于相机的参数配置和事件获取等操作。<br />
+ <div class="fragment"><div class="line"><span class="comment">/*打开相机*/</span></div><div class="line"><a class="code" href="group___xE5_xAE_x8F_xE5_xAE_x9A_xE4_xB9_x89.html#ga0ecdcce3a277e32beb329eaaa2f7e0a5">DEVHANDLE</a> hDevice = NULL;</div><div class="line">nRet = <a class="code" href="group___xE7_x9B_xB8_xE6_x9C_xBA_xE6_x8E_xA5_xE5_x8F_xA3.html#gaac9bf0fd2e16730ea478af2f76f11df3">MV_FG_OpenDevice</a>(hInterface, nDeviceIndex, &amp;hDevice);</div><div class="line">Check(nRet);</div><div class="line"></div><div class="line"><span class="comment">// TODO：进行相机配置等操作</span></div></div><!-- fragment -->  </li>
+<li>
+通过调用 <a class="el" href="group___xE7_x9B_xB8_xE6_x9C_xBA_xE6_x8E_xA5_xE5_x8F_xA3.html#ga46ae88fcca93cd7937d1bd4e8b614c1d" title="通过相机ID打开相机">MV_FG_OpenDeviceByID()</a> 接口，输入相机ID，打开相机。使用该接口打开相机可以跳过相机枚举流程，但需能提前获取相机ID。相机ID是由型号和序列号组成，该ID可以是 <a class="el" href="struct_m_v___f_g___d_e_v_i_c_e___i_n_f_o.html" title="相机信息">MV_FG_DEVICE_INFO</a> 结构体中的chDeviceID。同时输入相机ID时也支持模糊搜索功能，只需输入相机ID中能唯一标识该相机的信息即可，比如序列号。<br />
+ <div class="fragment"><div class="line"><span class="comment">/*通过相机ID打开相机*/</span></div><div class="line"><a class="code" href="group___xE5_xAE_x8F_xE5_xAE_x9A_xE4_xB9_x89.html#ga0ecdcce3a277e32beb329eaaa2f7e0a5">DEVHANDLE</a> hDevice = NULL;</div><div class="line">nRet = <a class="code" href="group___xE7_x9B_xB8_xE6_x9C_xBA_xE6_x8E_xA5_xE5_x8F_xA3.html#ga46ae88fcca93cd7937d1bd4e8b614c1d">MV_FG_OpenDeviceByID</a>(hInterface, <span class="stringliteral">&quot;SerialNumber&quot;</span>, &amp;hDevice);</div><div class="line">Check(nRet);</div><div class="line"></div><div class="line"><span class="comment">// TODO：进行相机配置等操作</span></div></div><!-- fragment -->  </li>
+</ul>
+<br />
+ </div><div class="header" style="margin-left:-12px;margin-top:-10px;margin-right:-8px;"> <div class="headertitle"> <div id="guanbixiangji" class="title">关闭相机</div> </div> </div> <div id="hikvision"> <br />
+ </div><div id="hikvision">当需要关闭相机时，可以调用 <a class="el" href="group___xE7_x9B_xB8_xE6_x9C_xBA_xE6_x8E_xA5_xE5_x8F_xA3.html#ga6d12de1a1f2c37e22fcf8aec4af48e41" title="关闭相机">MV_FG_CloseDevice()</a> 接口，输入对应相机句柄进行关闭。应当注意的是，当相机被关闭后，原先指向相机的句柄将失效，不能再用于其它接口的调用。</div><div id="hikvision"> <div class="fragment"><div class="line"><span class="comment">/*关闭相机*/</span></div><div class="line">nRet = <a class="code" href="group___xE7_x9B_xB8_xE6_x9C_xBA_xE6_x8E_xA5_xE5_x8F_xA3.html#ga6d12de1a1f2c37e22fcf8aec4af48e41">MV_FG_CloseDevice</a>(hDevice);</div><div class="line">hDevice = NULL;</div><div class="line">Check(nRet);</div></div><!-- fragment --> <br />
+ </div><div class="header" style="margin-left:-12px;margin-top:-10px;margin-right:-8px;"> <div class="headertitle"> <div id="peizhixiangji" class="title">配置相机</div> </div> </div> <div id="hikvision"> <br />
+ </div><div id="hikvision">参考<a class="el" href="_xE9_x85_x8D_xE7_xBD_xAE_xE5_x8F_x82_xE6_x95_xB0.html">配置参数</a> 模块。</div><div id="hikvision"> <br />
+ </div> </div></div><!-- PageDoc -->
+</div><!-- contents -->
+<!-- start footer part -->
+<div class="footer" style="text-align: right;">
+	<hr/>
+	<small></small>
+</div>
+</body>
+</html>

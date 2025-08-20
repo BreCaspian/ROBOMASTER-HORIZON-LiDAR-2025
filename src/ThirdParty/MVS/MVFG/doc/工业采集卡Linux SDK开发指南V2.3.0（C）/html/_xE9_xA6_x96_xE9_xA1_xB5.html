@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="custom-style.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+	<div style="overflow: hidden;">
+		<div style="height: 57px;min-width: 1039px;background-size: auto 100%;background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABwgAAAABCAYAAADKO/rAAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAABRSURBVFhH7dUxCoBADEXB5LK5/w1iIaLIrsgWNs50Sf/4WVUd8HOZGd1nCqMbGNMPrNMPrJv1cvz0A3OjfuwPvDPrxf7A7t7IlX7gmX74VsQGguw4S6+UnSYAAAAASUVORK5CYII=');">
+			<img src="titleleft.png" style="float: left;"/>
+			<img src="titleright.png" alt="" style="float: right;" />
+		</div>
+	</div>
+<!-- 制作者 Doxygen 1.8.15 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>法律声明</span></a></li>
+      <li><a href="_xE9_xA6_x96_xE9_xA1_xB5.html"><span>首页</span></a></li>
+      <li><a href="_xE6_x9B_xB4_xE6_x96_xB0_xE8_xAE_xB0_xE5_xBD_x95.html"><span>更新记录</span></a></li>
+      <li><a href="usergroup0.html"><span>编程引导</span></a></li>
+      <li><a href="modules.html"><span>接口及数据结构</span></a></li>
+      <li><a href="_xE6_x8E_xA7_xE5_x88_xB6_xE5_x8F_xB0_xE7_xA4_xBA_xE4_xBE_x8B_xE7_xA8_x8B_xE5_xBA_x8F.html"><span>示例程序</span></a></li>
+      <li><a href="_xE9_x94_x99_xE8_xAF_xAF_xE7_xA0_x81.html"><span>错误码</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="PageDoc"><div class="contents">
+<div class="textblock"><div class="header" style="margin-left:-12px;margin-top:-10px;margin-right:-8px;"> <div class="headertitle"> <div class="title">工业采集卡Linux SDK开发指南V2.3.0（C）</div> </div> </div> <div style="margin: 0 0 0 35px;"> <h2>概述</h2>
+</div><div style="margin: 0 0 0 35px;"> </div><div style="margin: 0 0 0 35px;">工业采集卡SDK开发指南主要对API的使用进行说明。API库为所有采集卡提供统一的访问控制接口，可简化接口调用，支持多种类型卡同时使用。</div><div style="margin: 0 0 0 35px;"> </div><div style="margin: 0 0 0 35px;">目前支持GigE Vision采集卡、CoaXPress采集卡、Camera Link采集卡和XoFLink采集卡，其接口主要分为版本信息接口、初始化及释放接口、采集卡接口、相机接口、图像采集接口、图像处理接口、通用接口以及事件接口，为用户使用软件设计提供较高的自由度。 </div><div style="margin: 0 0 0 35px;"></div><div style="margin: 0 0 0 35px;"> <h2>开始使用</h2>
+</div><div style="margin: 0 0 0 35px;"> <table style="margin: 0 0 0 25px;" border="0">
+<tr>
+<td><a class="el" href="_xE6_x9B_xB4_xE6_x96_xB0_xE8_xAE_xB0_xE5_xBD_x95.html">更新记录</a> </td><td>记录SDK各版本的主要更新情况。 </td></tr>
+<tr>
+<td><a href="usergroup0.html" class="el">编程引导</a></td><td>介绍C接口的基本使用流程。 </td></tr>
+<tr>
+<td><a href="modules.html" class="el">接口及数据结构</a></td><td>介绍C的接口函数及数据结构。 </td></tr>
+<tr>
+<td><a href="_xE6_x8E_xA7_xE5_x88_xB6_xE5_x8F_xB0_xE7_xA4_xBA_xE4_xBE_x8B_xE7_xA8_x8B_xE5_xBA_x8F.html" class="el">示例程序</a></td><td>介绍常见用例和接口基本的使用方法。 </td></tr>
+<tr>
+<td><a class="el" href="_xE9_x94_x99_xE8_xAF_xAF_xE7_xA0_x81.html">错误码</a> </td><td>介绍接口函数返回的错误码定义，方便程序出现问题时进行排查。 </td></tr>
+</table>
+</div><div style="margin: 0 0 0 35px;"> <h2>运行环境</h2>
+</div><div style="margin: 0 0 0 35px;"> <table style="margin: 0 0 0 25px;" border="0">
+<tr>
+<td><b>GigE Vision采集卡</b> </td></tr>
+<tr>
+<td>硬件配置：PCI-E gen2 × 4 </td></tr>
+<tr>
+<td>软件环境：Ubuntu16.04/18.04/20.04/22.04 x86_64bits操作系统 </td></tr>
+<tr>
+<td><b>CoaXPress采集卡</b> </td></tr>
+<tr>
+<td>硬件配置：PCI-E gen2 × 8（CoaXPress-6采集卡）、PCI-E gen3 × 8（CoaXPress-12采集卡） </td></tr>
+<tr>
+<td>软件环境：Ubuntu16.04/18.04/20.04/22.04 x86_64bits操作系统 </td></tr>
+<tr>
+<td><b>Camera Link采集卡</b> </td></tr>
+<tr>
+<td>硬件配置：PCI-E gen2 × 4 </td></tr>
+<tr>
+<td>软件环境：Ubuntu16.04/18.04/20.04/22.04 x86_64bits操作系统 </td></tr>
+<tr>
+<td><b>XoFLink采集卡</b> </td></tr>
+<tr>
+<td>硬件配置：PCI-E gen2 × 8 </td></tr>
+<tr>
+<td>软件环境：Ubuntu16.04/18.04/20.04/22.04 x86_64bits操作系统 </td></tr>
+</table>
+<h2>总体层次结构</h2>
+</div><div style="margin: 0 0 0 35px;"> </div><div style="margin: 0 0 0 35px;"><img src="2.1.png" width="747" height="631" alt="" class="inline"/>
+</div><div style="margin: 0 0 0 35px;"> </div> </div></div><!-- PageDoc -->
+</div><!-- contents -->
+<!-- start footer part -->
+<div class="footer" style="text-align: right;">
+	<hr/>
+	<small></small>
+</div>
+</body>
+</html>

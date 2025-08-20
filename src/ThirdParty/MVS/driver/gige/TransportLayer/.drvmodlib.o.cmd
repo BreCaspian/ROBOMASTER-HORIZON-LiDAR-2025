@@ -1,0 +1,1 @@
+cmd_/home/ruanjiaojiao/GigE_Linux/trunk/src/drvmodlib.o := ld -m elf_x86_64   -r -o /home/ruanjiaojiao/GigE_Linux/trunk/src/drvmodlib.o /home/ruanjiaojiao/GigE_Linux/trunk/src/MVGvspParse.o /home/ruanjiaojiao/GigE_Linux/trunk/src/MVNetFilter.o 
