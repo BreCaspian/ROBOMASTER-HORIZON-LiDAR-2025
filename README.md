@@ -55,9 +55,10 @@
   <img src="Docs/Hik-TEST.png" alt="LidarPNG" width="80%"><br>
   <b>HikVision 工业相机以及UART通信测试模块运行雷达站效果</b>
 </p>
+
 **[Bilibili效果展示视频](https://www.bilibili.com/video/BV1AWtgzREbX/?spm_id_from=333.337.search-card.all.click&vd_source=3c76eab145811dc6a99e9691ce7f2384)**
 
-**Tips : **
+**Tips :**
 
 ​	**说明： 效果展示视频之所以卡顿是因为该视频在录制中由于设备负载较大被异常终止导致视频损坏，当时没能及时发现该问题，后续整理相关材料才发现视频损坏。尽管后续进行了一系列人为视频修复工作，但是效果仍然不佳，大量片段损坏、丢失或马赛克现象严重，所以只能对视频有效部分进行剪辑。**
 
