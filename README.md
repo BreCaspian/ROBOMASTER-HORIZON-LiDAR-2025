@@ -64,6 +64,18 @@
 
 ​	**实际运行效果流畅，使用MindVision工业相机整体帧率在60帧左右，HikVision工业相机由于分辨率极高，整体帧率在10帧左右**。
 
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="Docs/Lidar_20250901210048.jpg" alt="Lidar1" width="125%"><br>
+    </td>
+    <td align="center">
+      <img src="Docs/Lidar_20250901210105.jpg" alt="Lidar2" width="125%"><br>
+    </td>
+  </tr>
+</table>
+
 ---
 
 ## 系统架构——核心处理流水线
@@ -153,7 +165,12 @@ graph TB
 
 ### 个人运算端配置
 - **CPU**：Intel i9-12700H  
-- **GPU**：NVIDIA RTX 3060  
+- **GPU**：NVIDIA RTX 3060
+
+<p align="center">
+  <img src="Docs/Y9000P.jpg" alt="Y9000P" width="60%"><br>
+  <b>Y900P</b>
+</p>
 
 ### 支持的硬件设备
 
