@@ -68,10 +68,10 @@
 <table>
   <tr>
     <td align="center">
-      <img src="Docs/Lidar_20250901212141.jpg" alt="Lidar1" width="125%"><br>
+      <img src="Docs/Lidar_20250901212141.jpg" alt="Lidar1" width="80%"><br>
     </td>
     <td align="center">
-      <img src="Docs/Lidar_20250901212057.jpg" alt="Lidar2" width="125%"><br>
+      <img src="Docs/Lidar_20250901212057.jpg" alt="Lidar2" width="80%"><br>
     </td>
   </tr>
 </table>
