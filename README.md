@@ -581,7 +581,7 @@ track_buffer: 35        # 适度增大跟踪缓冲区，平衡ID稳定性和准�
   事件驱动的界面支持实时参数热更新，显示FPS等基础性能指标，支持轨迹可视化。
 
 <p align="center">
-  <img src="Docs/PointCloud.jpg" alt="PointCloud" width="80%"><br>
+  <img src="Docs/PointCloud.jpg" alt="PointCloud" width="70%"><br>
   <sub><i>GUI 与 点云可视化</i></sub>
 </p>
 
@@ -660,7 +660,7 @@ track_buffer: 35        # 适度增大跟踪缓冲区，平衡ID稳定性和准�
 * 经多次实验验证，结果准确可靠
 
 <div align="center">
-	<img src="Docs/CalibrationTool.jpeg" alt="CalibrationTool" width="300"/>
+	<img src="Docs/CalibrationTool.jpeg" alt="CalibrationTool" width="70%"/>
 </div>
 
 👉 目前正在撰写基于该工具的详细联合标定教程，后续将开源完整指导材料。
