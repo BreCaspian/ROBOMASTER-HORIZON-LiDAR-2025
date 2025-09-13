@@ -607,7 +607,7 @@ track_buffer: 35        # 适度增大跟踪缓冲区，平衡ID稳定性和准�
 
   
 
-  **这里感谢沈阳航空航天大学T-UP战队2023赛季雷达程序原作者设计的[Yolov5 Tensorrt高性能推理加速模块](https://github.com/tup-robomaster/TRTInferenceForYolo/tree/cb985c57fe95e629d09e7fb03e93ff1ba99a108e)**
+  **这里感谢沈阳航空航天大学T-UP战队2023赛季雷达程序原作者设计的 [Yolov5 Tensorrt高性能推理加速模块](https://github.com/tup-robomaster/TRTInferenceForYolo/tree/cb985c57fe95e629d09e7fb03e93ff1ba99a108e)**
 
   这是一个非常值得大力探索的方向。
 
@@ -671,11 +671,11 @@ track_buffer: 35        # 适度增大跟踪缓冲区，平衡ID稳定性和准�
 
 ​	**[RoboMaster-Lidar-Lab](https://github.com/BreCaspian/RoboMaster-Lidar-Lab)**
 
-​	**[LiDAR-Camera_Calibration_Validator 激光雷达-相机联合标定结果可视化校验工具](https://github.com/BreCaspian/LiDAR-Camera_Calibration_Validator)**
-
 ​	**[ROBOMASTER-2025 · 华北理工大学HORIZON战队 · LiDAR ROSBAG](https://github.com/BreCaspian/ROBOMASTER-2025-LiDAR-ROSBAG)**
 
 ​	**[ROBOMASTER-2025 · 华北理工大学HORIZON战队 · 能量机关超清视频](https://github.com/BreCaspian/ROBOMASTER-2025-Energy-Mechanism-Video)**	
+
+​	**[LiDAR-Camera_Calibration_Validator 激光雷达-相机联合标定结果可视化校验工具](https://github.com/BreCaspian/LiDAR-Camera_Calibration_Validator)**
 
 ---
 
