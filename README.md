@@ -671,10 +671,11 @@ track_buffer: 35        # 适度增大跟踪缓冲区，平衡ID稳定性和准�
 
 ​	**[RoboMaster-Lidar-Lab](https://github.com/BreCaspian/RoboMaster-Lidar-Lab)**
 
-​	 **[ROBOMASTER-2025 · 华北理工大学HORIZON战队 · LiDAR ROSBAG](https://github.com/BreCaspian/ROBOMASTER-2025-LiDAR-ROSBAG)**
+​	**[LiDAR-Camera_Calibration_Validator 激光雷达-相机联合标定结果可视化校验工具](https://github.com/BreCaspian/LiDAR-Camera_Calibration_Validator)**
+
+​	**[ROBOMASTER-2025 · 华北理工大学HORIZON战队 · LiDAR ROSBAG](https://github.com/BreCaspian/ROBOMASTER-2025-LiDAR-ROSBAG)**
 
 ​	**[ROBOMASTER-2025 · 华北理工大学HORIZON战队 · 能量机关超清视频](https://github.com/BreCaspian/ROBOMASTER-2025-Energy-Mechanism-Video)**	
-
 
 ---
 
