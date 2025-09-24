@@ -705,7 +705,7 @@ track_buffer: 35        # 适度增大跟踪缓冲区，平衡ID稳定性和准�
 
 **技术问答 / 交流  / Bug反馈 / 功能建议**
 
-- **2025赛季雷达负责人 :** 姚宇倬
+- **2025赛季雷达负责人 :** YaoYuzhuo
 - **QQ :** 1927166841
 - **Email :** yaoyuzhuo6@gmail.com  
 - **Bilibili频道**：[华北理工RM创新实验室](https://space.bilibili.com/481866846?spm_id_from=333.337.search-card.all.click)
