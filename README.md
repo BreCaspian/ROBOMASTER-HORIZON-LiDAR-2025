@@ -671,6 +671,8 @@ track_buffer: 35        # 适度增大跟踪缓冲区，平衡ID稳定性和准�
 👉 目前正在撰写基于该工具的详细联合标定教程，后续将开源完整指导材料。
       如急需使用，可与我随时联系，或参考 [官方标定教程](https://koide3.github.io/direct_visual_lidar_calibration/)
 
+---
+
 > [!NOTE]
 >**另外提供 :**
 > 
