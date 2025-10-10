@@ -58,13 +58,12 @@
 
 **[Bilibili效果展示视频](https://www.bilibili.com/video/BV1AWtgzREbX/?spm_id_from=333.337.search-card.all.click&vd_source=3c76eab145811dc6a99e9691ce7f2384)**
 
-**Tips :**
+> [!TIP]
+>**效果展示视频之所以卡顿是因为该视频在录制中由于设备负载较大被异常终止导致视频损坏，当时没能及时发现该问题，后续整理相关材料才发现视频损坏。尽管后续进行了一系列人为视频修复工作，但是效果仍然不佳，大量片段损坏、丢失或马赛克现象严重，所以只能对视频有效部分进行剪辑。**
+> 
+> **实际运行效果流畅，使用MindVision工业相机整体帧率在60帧左右，HikVision工业相机由于分辨率极高，整体帧率在10帧左右**。
 
-​	**说明： 效果展示视频之所以卡顿是因为该视频在录制中由于设备负载较大被异常终止导致视频损坏，当时没能及时发现该问题，后续整理相关材料才发现视频损坏。尽管后续进行了一系列人为视频修复工作，但是效果仍然不佳，大量片段损坏、丢失或马赛克现象严重，所以只能对视频有效部分进行剪辑。**
-
-​	**实际运行效果流畅，使用MindVision工业相机整体帧率在60帧左右，HikVision工业相机由于分辨率极高，整体帧率在10帧左右**。
-
-
+​	
 <table>
   <tr>
     <td align="center">
@@ -214,7 +213,8 @@ graph TB
 
 ## 🚀 快速开始
 
-> **重要**: 在启动程序前，必须完成以下配置步骤
+> [!IMPORTANT] 
+> **在启动程序前，必须完成以下配置步骤**
 
 ---
 
@@ -554,7 +554,9 @@ track_buffer: 35        # 适度增大跟踪缓冲区，平衡ID稳定性和准�
   利用Eigen库的向量化运算，实现高效的3D到2D投影变换。
 
 ### SIMD 向量化加速 ——>（启用 MKL - 已预留 SIMD 优化接口  若启用该接口预计可提升 30%- 50% ）
-     注意: 这是一项 实验性高性能设计 不同设备启用存在差异 启用前务必再次测试 ！！！
+
+> [!CAUTION]
+> 这是一项 实验性高性能设计 不同设备启用存在差异 启用前务必再次测试 ！！！
 ---
 
 
@@ -644,8 +646,10 @@ track_buffer: 35        # 适度增大跟踪缓冲区，平衡ID稳定性和准�
 
 ### ⚠️ 模型依赖问题
 
-从实际赛场表现来看，本方案对检测模型质量依赖严重，现有模型已不足以满足新赛场需求。
-建议使用新的方法与数据集重新训练模型，以显著提升检测性能。
+> [!WARNING]
+>从实际赛场表现来看，本方案对检测模型质量依赖严重，现有模型已不足以满足新赛场需求。
+> 
+>建议使用新的方法与数据集重新训练模型，以显著提升检测性能。 
 
 ### 点云处理优化方向
 
@@ -667,15 +671,16 @@ track_buffer: 35        # 适度增大跟踪缓冲区，平衡ID稳定性和准�
 👉 目前正在撰写基于该工具的详细联合标定教程，后续将开源完整指导材料。
       如急需使用，可与我随时联系，或参考 [官方标定教程](https://koide3.github.io/direct_visual_lidar_calibration/)
 
-**另外提供 :**
-
-​	**[RoboMaster-Lidar-Lab](https://github.com/BreCaspian/RoboMaster-Lidar-Lab)**
-
-​	**[ROBOMASTER-2025 · 华北理工大学HORIZON战队 · LiDAR ROSBAG](https://github.com/BreCaspian/ROBOMASTER-2025-LiDAR-ROSBAG)**
-
-​	**[ROBOMASTER-2025 · 华北理工大学HORIZON战队 · 能量机关超清视频](https://github.com/BreCaspian/ROBOMASTER-2025-Energy-Mechanism-Video)**	
-
-​	**[LiDAR-Camera_Calibration_Validator 激光雷达-相机联合标定结果可视化校验工具](https://github.com/BreCaspian/LiDAR-Camera_Calibration_Validator)**
+> [!NOTE]
+>**另外提供 :**
+> 
+> **[RoboMaster-Lidar-Lab](https://github.com/BreCaspian/RoboMaster-Lidar-Lab)**
+> 
+> **[ROBOMASTER-2025 · 华北理工大学HORIZON战队 · LiDAR ROSBAG](https://github.com/BreCaspian/ROBOMASTER-2025-LiDAR-ROSBAG)**
+> 
+> **[ROBOMASTER-2025 · 华北理工大学HORIZON战队 · 能量机关超清视频](https://github.com/BreCaspian/ROBOMASTER-2025-Energy-Mechanism-Video)**
+> 
+> **[LiDAR-Camera_Calibration_Validator 激光雷达-相机联合标定结果可视化校验工具](https://github.com/BreCaspian/LiDAR-Camera_Calibration_Validator)**
 
 ---
 
