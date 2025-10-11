@@ -19,13 +19,13 @@
 
 <div align="center">
   <p>
-    <a href="#overview">项目概述</a> •
-    <a href="#demo">系统演示</a> •
-    <a href="#pipeline">系统架构</a> •
-    <a href="#quickstart">快速开始</a> •
-    <a href="#hardware">硬件介绍</a> •
-    <a href="#license">许可证</a> •
-    <a href="#contact">联系与支持</a>
+    项目概述 •
+    系统演示 •
+    系统架构 •
+    快速开始 •
+    硬件介绍 •
+    许可证 •
+    联系与支持
   </p>
 </div>
 
