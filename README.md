@@ -195,7 +195,7 @@ graph TB
 
 - 镭神-**CH128X**（主要测试设备）  
 - Livox Avia（兼容）  
-- Livox Mid-360
+- Livox Mid-360 (点云密度较低，建议多帧融合)
 - Livox Mid-70
 - Livox Mid-40
 - Livox HAP
