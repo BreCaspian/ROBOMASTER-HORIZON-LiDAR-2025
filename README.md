@@ -671,6 +671,8 @@ track_buffer: 35        # 适度增大跟踪缓冲区，平衡ID稳定性和准�
 👉 目前正在撰写基于该工具的详细联合标定教程，后续将开源完整指导材料。
       如急需使用，可与我随时联系，或参考 [官方标定教程](https://koide3.github.io/direct_visual_lidar_calibration/)
 
+- [ROS 相机标定详细教程](https://blog.csdn.net/2401_88008105/article/details/152665216?spm=1001.2014.3001.5506) 华北理工大学-HORIZON战队-雷达组 ROS相机标定教程。
+
 ---
 
 > [!NOTE]
