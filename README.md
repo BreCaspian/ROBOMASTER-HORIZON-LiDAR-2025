@@ -4,7 +4,7 @@
 
 <h2 align="center">ROBOMASTER-2025 · 华北理工大学HORIZON战队 · LiDAR-2025</h2>
 
----
+
 
 <div align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-GPL%203.0-blue.svg"></a>
