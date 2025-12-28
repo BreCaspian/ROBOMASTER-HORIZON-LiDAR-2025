@@ -163,9 +163,9 @@ graph TB
 ## 硬件介绍
 
 ### 个人运算端配置
-- **CPU**：Intel i9-12700H  
-- **GPU**：NVIDIA RTX 3060
-
+- **CPU**：12th Gen Intel® Core™ i9-12900H × 20
+- **GPU**：NVIDIA Corporation GA106M [GeForce RTX 3060 Mobile / Max-Q]
+  
 <p align="center">
   <img src="Docs/Y9000P.jpg" alt="Y9000P" width="60%"><br>
   <b>Y900P</b>
