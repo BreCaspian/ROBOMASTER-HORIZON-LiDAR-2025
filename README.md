@@ -79,80 +79,10 @@
 
 ## 系统架构——核心处理流水线
 
-```mermaid
-%%{init: {"themeVariables": {/* ROBOMASTER-2025-HORIZON-LiDAR-YaoYuzhuo-2025-8-19 */
-    "fontSize": "10px",   
-    "nodeSpacing": 20,   
-    "rankSpacing": 25     
-}}}%%
-
-graph TB
-    %% 定义样式
-    classDef input fill:#4DB6AC,stroke:#00695C,stroke-width:2px,color:#fff,font-weight:bold
-    classDef pre fill:#64B5F6,stroke:#1E88E5,stroke-width:2px,color:#fff,font-weight:bold
-    classDef detect fill:#BA68C8,stroke:#6A1B9A,stroke-width:2px,color:#fff,font-weight:bold
-    classDef fusion fill:#FFD54F,stroke:#F9A825,stroke-width:2px,color:#000,font-weight:bold
-    classDef track fill:#FF8A65,stroke:#D84315,stroke-width:2px,color:#fff,font-weight:bold
-    classDef output fill:#90A4AE,stroke:#37474F,stroke-width:2px,color:#fff,font-weight:bold
-
-    %% 数据输入层
-    subgraph 输入层
-        A[激光雷达点云<br/>镭神-CH128X]
-        C[工业相机图像<br/>HikVision/MindVision]
-    end
-    class A,C input
-
-    %% 预处理层
-    subgraph 预处理层
-        B[点云预处理<br/>降采样 / 滤波]
-        D[图像预处理<br/>去畸变 / 增强]
-    end
-    class B,D pre
-
-    %% 检测层
-    subgraph 检测层
-        E[车辆检测器<br/>TRT-YOLOv5]
-        F[ROI-装甲板检测器<br/>TRT-YOLOv5]
-    end
-    class E,F detect
-
-    %% 融合层
-    subgraph 融合层
-        G[深度赋值<br/>点云投影]
-        H[3D定位<br/>坐标变换]
-    end
-    class G,H fusion
-
-    %% 跟踪层
-    subgraph 跟踪层
-        I[多目标跟踪<br/>ByteTracker<br/>DeepSORT]
-        J[轨迹预测<br/>卡尔曼滤波]
-    end
-    class I,J track
-
-    %% 输出层
-    subgraph 输出层
-        K[UART通信<br/>裁判系统对接]
-        L[ROS发布<br/>位置信息]
-        M[GUI显示<br/>实时监控]
-    end
-    class K,L,M output
-
-    %% 数据流
-    A --> B
-    C --> D
-    B --> G
-    D --> E
-    E --> F
-    F --> G
-    G --> H
-    H --> I
-    I --> J
-    J --> K
-    J --> L
-    J --> M
-
-```
+<p align="center">
+  <img src="Docs/architecture.svg" alt="architecture" width="100%"><br>
+  <b>系统整体架构</b>
+</p>
 
 
 
