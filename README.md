@@ -31,15 +31,15 @@
 
 ---
 
-## 📖 项目概述
+## 项目概述
 
-​	**LiDAR-2025** 是 **华北理工大学 HORIZON 战队** ROBOMASTER-2025 赛季 **雷达站** 方案。
+​	**LiDAR-2025** 是 **华北理工大学 HORIZON 战队** ROBOMASTER-2025 赛季 **雷达站** 方案
 
-​	系统融合 **激光雷达点云** 与 **工业相机视觉**，实现对赛场机器人的 **实时检测、跟踪与定位**。
+​	系统融合 **激光雷达点云** 与 **工业相机视觉**，实现对赛场机器人的 **实时检测、跟踪与定位**
 
-​	该方案是对 [沈阳航空航天大学T-UP战队2023赛季雷达程序](https://github.com/tup-robomaster/RM_Radar2023) 的 **重构与针对性优化和创新**。
+​	该方案是对 [沈阳航空航天大学T-UP战队2023赛季雷达程序](https://github.com/tup-robomaster/RM_Radar2023) 的 **重构与针对性优化和创新**
 
-​	在 **高密度点云高速处理**，**跟踪 ID 持久化**，**多传感器适配** 以及**扩展性**等多方面进行了创新。
+​	在 **高密度点云高速处理**，**跟踪 ID 持久化**，**多传感器适配** 以及**扩展性**等多方面进行了创新
 
 ---
 
@@ -81,7 +81,6 @@
 
 <p align="center">
   <img src="Docs/architecture.svg" alt="architecture" width="100%"><br>
-  <b>系统整体架构</b>
 </p>
 
 
@@ -395,18 +394,6 @@ ByteTracker作为该方案多目标跟踪的核心算法，通过级联匹配策
 
 ### 通过测试提供若干个可直接使用的参数配置方案
 
-### 高召回优先配置
-必须尽可能跟踪所有目标，允许一定误报  
-
-```yaml
-track_thresh: 0.3       # 降低跟踪阈值，接受更多低置信度检测
-high_thresh: 0.5        # 降低高置信度阈值，更容易创建新轨迹
-match_thresh: 0.6       # 降低匹配阈值，更宽松的匹配策略
-use_second_match: true  # 启用二次匹配，提高召回率
-restore_tracks: true    # 启用轨迹恢复，减少ID切换
-track_buffer: 40        # 增大跟踪缓冲区，延长轨迹保留时间
-```
-
 ------
 
 ### 高精度优先配置
@@ -436,19 +423,6 @@ track_buffer: 45          # 增大跟踪缓冲区，避免目标ID频繁变化
 frame_rate: 60            # 适应更高帧率（如果硬件支持）
 ```
 
-------
-
-### 拥挤场景配置
-
-多目标密集，容易ID混淆
-
-```yaml
-high_thresh: 0.7        # 提高高置信度阈值，减少ID混淆
-match_thresh: 0.8       # 提高匹配阈值，更严格匹配策略
-use_second_match: true  # 启用二次匹配，解决密集场景的关联问题
-restore_tracks: true    # 启用轨迹恢复，减少ID切换
-track_buffer: 35        # 适度增大跟踪缓冲区，平衡ID稳定性和准确性
-```
 
 ---
 
@@ -537,11 +511,11 @@ track_buffer: 35        # 适度增大跟踪缓冲区，平衡ID稳定性和准�
 
   专门的GPU推理加速。
 
-  
-
   **这里感谢沈阳航空航天大学T-UP战队2023赛季雷达程序原作者设计的 [Yolov5 Tensorrt高性能推理加速模块](https://github.com/tup-robomaster/TRTInferenceForYolo/tree/cb985c57fe95e629d09e7fb03e93ff1ba99a108e)**
 
   这是一个非常值得大力探索的方向。
+
+  另外提供[专为 华北理工大学 HORIZON 战队 ROBOMASTER 2026 雷达组雷达定位系统与反无人机激光追踪系统 设计的 YOLOv11 INT8 PTQ 高性能 TensorRT 推理引擎](https://github.com/BreCaspian/TRTInferX)
 
 ### 模块化架构
 - **插件式设计**：
