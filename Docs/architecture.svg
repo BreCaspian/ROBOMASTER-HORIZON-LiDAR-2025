@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- 由 Microsoft Visio, SVG Export 生成 Archtecture.svg Page-1 -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="5.05905in" height="7.455in"
+		viewBox="0 0 364.252 536.76" xml:space="preserve" color-interpolation-filters="sRGB" class="st26">
+	<v:documentProperties v:langID="2052" v:metric="true" v:viewMarkup="false">
+		<v:userDefs>
+			<v:ud v:nameU="msvNoAutoConnect" v:val="VT0(0):26"/>
+		</v:userDefs>
+	</v:documentProperties>
+
+	<style type="text/css">
+	<![CDATA[
+		.st1 {fill:none;stroke:#0070c0;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.85}
+		.st2 {fill:#f2dcda;stroke:#00b0f0;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.85}
+		.st3 {fill:#fcebdd;stroke:#00b0f0;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.85}
+		.st4 {fill:#fff2cc;stroke:#00b0f0;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.85}
+		.st5 {fill:#dbeef3;stroke:#00b0f0;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.85}
+		.st6 {fill:#ebf1df;stroke:#00b0f0;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.85}
+		.st7 {fill:#eeeaf2;stroke:#00b0f0;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.85}
+		.st8 {fill:none;stroke:#0070c0;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.8}
+		.st9 {fill:#000000;font-family:华文行楷;font-size:0.499992em}
+		.st10 {font-family:Times New Roman;font-size:1em}
+		.st11 {font-size:1em}
+		.st12 {fill:#000000;font-family:Times New Roman;font-size:0.499992em}
+		.st13 {font-family:华文行楷;font-size:1em}
+		.st14 {fill:#000000;font-family:Times New Roman;font-size:0.499992em;font-weight:bold}
+		.st15 {font-family:华文行楷;font-size:1em;font-weight:normal}
+		.st16 {font-size:1em;font-weight:normal}
+		.st17 {marker-end:url(#mrkr4-129);stroke:#0070c0;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st18 {fill:#0070c0;fill-opacity:1;stroke:#0070c0;stroke-opacity:1;stroke-width:0.29411764705882}
+		.st19 {marker-end:url(#mrkr4-129);stroke:#0070c0;stroke-dasharray:0.75,1.5;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st20 {font-size:1em;text-decoration:underline}
+		.st21 {font-family:Times New Roman;font-size:1em;text-decoration:underline}
+		.st22 {fill:none;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st23 {fill:#000000;font-family:华文楷体;font-size:0.666664em;font-weight:bold}
+		.st24 {fill:#000000;font-family:华文楷体;font-size:0.499992em;font-weight:bold}
+		.st25 {fill:#000000;font-family:华文楷体;font-size:0.583328em;font-weight:bold}
+		.st26 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<defs id="Markers">
+		<g id="lend4">
+			<path d="M 2 1 L 0 0 L 2 -1 L 2 1 " style="stroke:none"/>
+		</g>
+		<marker id="mrkr4-129" class="st18" v:arrowType="4" v:arrowSize="1" v:setback="6.8" refX="-6.8" orient="auto"
+				markerUnits="strokeWidth" overflow="visible">
+			<use xlink:href="#lend4" transform="scale(-3.4,-3.4) "/>
+		</marker>
+	</defs>
+	<g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+		<title>页-1</title>
+		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="8.50394"
+				v:shadowOffsetY="-8.50394"/>
+		<v:layer v:name="连接线" v:index="0"/>
+		<g id="shape79-1" v:mID="79" v:groupContext="shape" transform="translate(18.425,-18.425)">
+			<title>框.79</title>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<rect x="0" y="36.85" width="327.402" height="499.91" rx="5.66929" ry="5.66929" class="st1"/>
+		</g>
+		<g id="shape77-3" v:mID="77" v:groupContext="shape" transform="translate(79.4478,-26.362)">
+			<title>框.77</title>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<rect x="0" y="490.555" width="193.854" height="46.2047" rx="5.66929" ry="5.66929" class="st2"/>
+		</g>
+		<g id="shape75-5" v:mID="75" v:groupContext="shape" transform="translate(99.0318,-82.2045)">
+			<title>框.75</title>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<rect x="0" y="444.492" width="162.349" height="92.2677" rx="5.66929" ry="5.66929" class="st3"/>
+		</g>
+		<g id="shape73-7" v:mID="73" v:groupContext="shape" transform="translate(99.0318,-178.441)">
+			<title>框.73</title>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<rect x="0" y="432.87" width="162.349" height="103.89" rx="5.66929" ry="5.66929" class="st4"/>
+		</g>
+		<g id="shape71-9" v:mID="71" v:groupContext="shape" transform="translate(93.6391,-293.386)">
+			<title>框.71</title>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<rect x="0" y="412.036" width="243.524" height="124.724" rx="5.66929" ry="5.66929" class="st5"/>
+		</g>
+		<g id="shape66-11" v:mID="66" v:groupContext="shape" transform="translate(25.5207,-240.278)">
+			<title>框.66</title>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<rect x="0" y="326.046" width="64.4287" height="210.714" rx="5.66929" ry="5.66929" class="st6"/>
+		</g>
+		<g id="shape63-13" v:mID="63" v:groupContext="shape" transform="translate(131.956,-462.047)">
+			<title>框</title>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<rect x="0" y="489.138" width="205.207" height="47.6221" rx="5.66929" ry="5.66929" class="st7"/>
+		</g>
+		<g id="shape2-15" v:mID="2" v:groupContext="shape" transform="translate(136.355,-469.417)">
+			<title>矩形</title>
+			<desc>工业相机图像 HikVision/MindVision 原始 BGR8 帧</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="33.3497" cy="525.421" width="66.7" height="22.6772"/>
+			<rect x="0" y="514.083" width="66.6993" height="22.6772" rx="5.66929" ry="5.66929" class="st8"/>
+			<text x="15.35" y="519.95" class="st9" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>工业相机图像<v:newlineChar/><tspan
+						x="5.51" dy="1.211em" class="st10" v:langID="1033">HikVision/MindVision<v:newlineChar/></tspan><tspan
+						x="15.18" dy="1.234em" class="st11">原始</tspan><tspan class="st10"> </tspan><tspan class="st10"
+						v:langID="1033">BGR8 </tspan>帧</text>		</g>
+		<g id="shape3-22" v:mID="3" v:groupContext="shape" transform="translate(259.11,-469.417)">
+			<title>矩形.3</title>
+			<desc>激光雷达点云 镭神-CH128X /cloudpoints | PointCloud2</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="36.8975" cy="525.421" width="73.8" height="22.6772"/>
+			<rect x="0" y="514.083" width="73.795" height="22.6772" rx="5.66929" ry="5.66929" class="st8"/>
+			<text x="18.9" y="519.95" class="st9" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>激光雷达点云<v:newlineChar/><tspan
+						x="19.06" dy="1.245em" class="st11">镭神</tspan><tspan class="st10">-</tspan><tspan class="st10"
+						v:langID="1033">CH128X<v:newlineChar/></tspan><tspan x="4.79" dy="1.211em" class="st10" v:langID="1033">/cloudpoints</tspan><tspan
+						class="st10"> </tspan><tspan class="st10">|</tspan><tspan class="st10" v:langID="1033"> </tspan><tspan
+						class="st10" v:langID="1033">PointCloud2</tspan></text>		</g>
+		<g id="shape4-33" v:mID="4" v:groupContext="shape" transform="translate(194.54,-428.031)">
+			<title>矩形.4</title>
+			<desc>供 ROI 裁剪原图</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="29.0922" cy="531.091" width="58.19" height="11.3386"/>
+			<rect x="0" y="525.421" width="58.1845" height="11.3386" rx="5.66929" ry="5.66929" class="st8"/>
+			<text x="7.43" y="532.96" class="st9" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>供<tspan class="st10"> </tspan><tspan
+						class="st10" v:langID="1033">ROI</tspan><tspan class="st10"> </tspan>裁剪原图</text>		</g>
+		<g id="shape5-39" v:mID="5" v:groupContext="shape" transform="translate(262.658,-386.409)">
+			<title>矩形.5</title>
+			<desc>LidarCallBack 点云预处理/降采样</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="33.3497" cy="528.965" width="66.7" height="15.5905"/>
+			<rect x="0" y="521.17" width="66.6993" height="15.5905" rx="5.66929" ry="5.66929" class="st8"/>
+			<text x="15.69" y="527.03" class="st12" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>LidarCallBack<v:newlineChar/><tspan
+						x="8.52" dy="1.234em" class="st13" v:langID="2052">点云预处理</tspan><tspan class="st11" v:langID="2052">/</tspan><tspan
+						class="st13" v:langID="2052">降采样</tspan> </text>		</g>
+		<g id="shape6-45" v:mID="6" v:groupContext="shape" transform="translate(140.612,-382.866)">
+			<title>矩形.6</title>
+			<desc>CarDetector 车辆检测框 TRT-YOLOv5</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="29.0922" cy="525.421" width="58.19" height="22.6772"/>
+			<rect x="0" y="514.083" width="58.1845" height="22.6772" rx="5.66929" ry="5.66929" class="st8"/>
+			<text x="14.43" y="519.89" class="st12" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>CarDetector<v:newlineChar/><tspan
+						x="14.09" dy="1.234em" class="st13" v:langID="2052">车辆检测框<v:newlineChar/></tspan><tspan x="11.1"
+						dy="1.211em" class="st11">TRT</tspan>-YOLOv5</text>		</g>
+		<g id="shape7-50" v:mID="7" v:groupContext="shape" transform="translate(261.239,-299.472)">
+			<title>矩形.7</title>
+			<desc>DepthQueue E₀ 和 K₀ 投影 最新publicDepth</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="34.7688" cy="525.421" width="69.54" height="22.6772"/>
+			<rect x="0" y="514.083" width="69.5376" height="22.6772" rx="5.66929" ry="5.66929" class="st8"/>
+			<text x="19.61" y="519.75" class="st12" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>DepthQueue<v:newlineChar/><tspan
+						x="17.72" dy="1.234em" class="st11">E</tspan>₀ <tspan class="st13" v:langID="2052">和</tspan><tspan
+						class="st11" v:langID="2052"> </tspan>K₀ <tspan class="st13" v:langID="2052">投影<v:newlineChar/></tspan><tspan
+						x="13.19" dy="1.245em" class="st11" v:langID="2052"> </tspan><tspan class="st13" v:langID="2052">最新</tspan>publicDepth</text>		</g>
+		<g id="shape8-59" v:mID="8" v:groupContext="shape" transform="translate(95.3544,-348.784)">
+			<title>矩形.8</title>
+			<desc>原生车辆检测框</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="25.0629" cy="531.091" width="50.13" height="11.3386"/>
+			<rect x="0" y="525.421" width="50.1259" height="11.3386" rx="5.66929" ry="5.66929" class="st8"/>
+			<text x="4.06" y="532.96" class="st9" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>原生车辆检测框</text>		</g>
+		<g id="shape9-62" v:mID="9" v:groupContext="shape" transform="translate(264.574,-251.23)">
+			<title>矩形.9</title>
+			<desc>最近一次共享深度图</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="31.4338" cy="531.091" width="62.87" height="11.3386"/>
+			<rect x="0" y="525.421" width="62.8677" height="11.3386" rx="5.66929" ry="5.66929" class="st8"/>
+			<text x="4.43" y="532.96" class="st9" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>最近一次共享深度图</text>		</g>
+		<g id="shape10-65" v:mID="10" v:groupContext="shape" transform="translate(129.969,-299.472)">
+			<title>矩形.10</title>
+			<desc>ArmorDetector 装甲板ROI裁剪与类别识别 TRT-YOLOv5</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="39.7358" cy="525.421" width="79.48" height="22.6772"/>
+			<rect x="0" y="514.083" width="79.4715" height="22.6772" rx="5.66929" ry="5.66929" class="st8"/>
+			<text x="21.41" y="519.89" class="st12" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>ArmorDetector<v:newlineChar/><tspan
+						x="4.57" dy="1.234em" class="st13" v:langID="2052">装甲板</tspan>ROI<tspan class="st13" v:langID="2052">裁剪与类别识别<v:newlineChar/></tspan><tspan
+						x="21.74" dy="1.211em" class="st11">TRT</tspan>-YOLOv5</text>		</g>
+		<g id="shape11-71" v:mID="11" v:groupContext="shape" transform="translate(196.972,-191.44)">
+			<title>矩形.11</title>
+			<desc>轨迹预测 卡尔曼滤波</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="26.6797" cy="528.256" width="53.36" height="17.0079"/>
+			<rect x="0" y="519.752" width="53.3595" height="17.0079" rx="5.66929" ry="5.66929" class="st8"/>
+			<text x="14.68" y="526.39" class="st9" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>轨迹预测<v:newlineChar/><tspan
+						x="11.68" dy="1.245em" class="st11">卡尔曼滤波</tspan></text>		</g>
+		<g id="shape12-75" v:mID="12" v:groupContext="shape" transform="translate(122.589,-248.463)">
+			<title>矩形.12</title>
+			<desc>armor_fliter 按类别取置信度最高的框</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="47.1153" cy="528.691" width="94.24" height="16.1389"/>
+			<rect x="0" y="520.621" width="94.2305" height="16.1389" rx="5.66929" ry="5.66929" class="st8"/>
+			<text x="32.62" y="526.76" class="st12" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>armor_fliter<v:newlineChar/><tspan
+						x="14.12" dy="1.234em" class="st13" v:langID="2052">按类别取置信度最高的框</tspan></text>		</g>
+		<g id="shape13-79" v:mID="13" v:groupContext="shape" transform="translate(126.492,-151.105)">
+			<title>矩形.13</title>
+			<desc>Radar::detectDepth 取装甲板框内非零深度的均值</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="43.2126" cy="528.691" width="86.43" height="16.1389"/>
+			<rect x="0" y="520.621" width="86.4253" height="16.1389" rx="5.66929" ry="5.66929" class="st8"/>
+			<text x="19.89" y="526.76" class="st12" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Radar::detectDepth<v:newlineChar/><tspan
+						x="4.21" dy="1.234em" class="st13">取装甲板框内非零深度的均值</tspan></text>		</g>
+		<g id="shape14-83" v:mID="14" v:groupContext="shape" transform="translate(124.991,-197.109)">
+			<title>矩形.14</title>
+			<desc>追踪关闭</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="22.2604" cy="531.091" width="44.53" height="11.3386"/>
+			<rect x="0" y="525.421" width="44.5209" height="11.3386" rx="5.66929" ry="5.66929" class="st8"/>
+			<text x="10.26" y="532.96" class="st9" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>追踪关闭</text>		</g>
+		<g id="shape15-86" v:mID="15" v:groupContext="shape" transform="translate(134.936,-119.055)">
+			<title>矩形.15</title>
+			<desc>框补偿 对IoU补偿框再取深度</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="34.7688" cy="528.256" width="69.54" height="17.0079"/>
+			<rect x="0" y="519.752" width="69.5376" height="17.0079" rx="5.66929" ry="5.66929" class="st8"/>
+			<text x="25.77" y="526.39" class="st9" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>框补偿<v:newlineChar/><tspan
+						x="6.1" dy="1.245em" class="st11">对</tspan><tspan class="st10" v:langID="1033">IoU</tspan>补偿框再取深度</text>		</g>
+		<g id="shape16-91" v:mID="16" v:groupContext="shape" transform="translate(189.684,-219.837)">
+			<title>矩形.16</title>
+			<desc>ByteTracker 追踪二维装甲板框关联</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="34.0749" cy="528.691" width="68.15" height="16.1389"/>
+			<rect x="0" y="520.621" width="68.1498" height="16.1389" rx="5.66929" ry="5.66929" class="st8"/>
+			<text x="19.08" y="526.76" class="st12" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>ByteTracker<v:newlineChar/><tspan
+						x="4.08" dy="1.234em" class="st13" v:langID="2052">追踪二维装甲板框关联</tspan></text>		</g>
+		<g id="shape17-95" v:mID="17" v:groupContext="shape" transform="translate(122.589,-88.3083)">
+			<title>矩形.17</title>
+			<desc>中心点去畸变回投转到赛场坐标</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="47.1153" cy="528.691" width="94.24" height="16.1389"/>
+			<rect x="0" y="520.621" width="94.2305" height="16.1389" rx="5.66929" ry="5.66929" class="st8"/>
+			<text x="5.12" y="530.56" class="st9" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>中心点去畸变回投转到赛场坐标</text>		</g>
+		<g id="shape18-98" v:mID="18" v:groupContext="shape" transform="translate(28.4502,-428.052)">
+			<title>矩形.18</title>
+			<desc>标定画面</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="29.0922" cy="530.838" width="58.19" height="11.8447"/>
+			<rect x="0" y="524.915" width="58.1845" height="11.8447" rx="5.66929" ry="5.66929" class="st8"/>
+			<text x="17.09" y="532.71" class="st9" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>标定画面</text>		</g>
+		<g id="shape19-101" v:mID="19" v:groupContext="shape" transform="translate(28.4502,-299.869)">
+			<title>矩形.19</title>
+			<desc>PnP 场地点 + K₀、C₀ 求解后取逆</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="29.0922" cy="525.421" width="58.19" height="22.6772"/>
+			<rect x="0" y="514.083" width="58.1845" height="22.6772" rx="5.66929" ry="5.66929" class="st8"/>
+			<text x="23.76" y="519.75" class="st14" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>PnP<v:newlineChar/><tspan
+						x="7.93" dy="1.234em" class="st15" v:langID="2052">场地点</tspan><tspan class="st16" v:langID="2052"> </tspan><tspan
+						class="st16" v:langID="2052">+ </tspan><tspan class="st16">K</tspan><tspan class="st16">₀</tspan><tspan
+						class="st15">、</tspan><tspan class="st16">C</tspan><tspan class="st16">₀ <v:newlineChar/></tspan><tspan
+						x="14.09" dy="1.245em" class="st15" v:langID="2052">求解后取逆</tspan></text>		</g>
+		<g id="shape20-113" v:mID="20" v:groupContext="shape" transform="translate(28.4502,-251.372)">
+			<title>矩形.20</title>
+			<desc>相机到赛场 变换矩阵 _T</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="29.0922" cy="528.509" width="58.19" height="16.5017"/>
+			<rect x="0" y="520.258" width="58.1845" height="16.5017" rx="5.66929" ry="5.66929" class="st8"/>
+			<text x="14.09" y="526.64" class="st9" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>相机到赛场<v:newlineChar/><tspan
+						x="13.01" dy="1.245em" class="st11">变换矩阵</tspan><tspan class="st10"> </tspan><tspan class="st10">_</tspan><tspan
+						class="st10" v:langID="1033">T</tspan></text>		</g>
+		<g id="shape21-120" v:mID="21" v:groupContext="shape" transform="translate(149.837,-345.827)">
+			<title>矩形.21</title>
+			<desc>DeepSORT 追踪车辆框</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="19.8679" cy="528.256" width="39.74" height="17.0079"/>
+			<rect x="0" y="519.752" width="39.7358" height="17.0079" rx="5.66929" ry="5.66929" class="st8"/>
+			<text x="5.87" y="526.32" class="st12" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>DeepSORT<v:newlineChar/><tspan
+						x="4.87" dy="1.234em" class="st13" v:langID="2052">追踪车辆框</tspan></text>		</g>
+		<g id="shape25-124" v:mID="25" v:groupContext="shape" v:layerMember="0" transform="translate(162.618,-469.417)">
+			<title>动态连接线</title>
+			<path d="M7.09 536.76 L7.09 595.53" class="st17"/>
+		</g>
+		<g id="shape26-130" v:mID="26" v:groupContext="shape" v:layerMember="0" transform="translate(140.612,-394.205)">
+			<title>动态连接线.26</title>
+			<path d="M0 536.76 L-20.2 536.76 L-20.2 565.74" class="st17"/>
+		</g>
+		<g id="shape27-135" v:mID="27" v:groupContext="shape" v:layerMember="0" transform="translate(162.618,-382.866)">
+			<title>动态连接线.27</title>
+			<path d="M7.09 536.76 L7.09 551.69" class="st19"/>
+		</g>
+		<g id="shape28-140" v:mID="28" v:groupContext="shape" v:layerMember="0" transform="translate(203.054,-480.756)">
+			<title>动态连接线.28</title>
+			<path d="M0 536.76 L20.58 536.76 L20.58 573.05" class="st17"/>
+		</g>
+		<g id="shape29-145" v:mID="29" v:groupContext="shape" v:layerMember="0" transform="translate(223.632,-428.031)">
+			<title>动态连接线.29</title>
+			<path d="M0 536.76 L0 653.98 L-9.09 653.98" class="st17"/>
+		</g>
+		<g id="shape30-150" v:mID="30" v:groupContext="shape" v:layerMember="0" transform="translate(162.618,-345.827)">
+			<title>动态连接线.30</title>
+			<path d="M7.09 536.76 L7.09 555.34" class="st19"/>
+		</g>
+		<g id="shape31-155" v:mID="31" v:groupContext="shape" v:layerMember="0" transform="translate(118.107,-348.784)">
+			<title>动态连接线.31</title>
+			<path d="M2.31 536.76 L2.31 574.73 L6.76 574.73" class="st17"/>
+		</g>
+		<g id="shape32-160" v:mID="32" v:groupContext="shape" v:layerMember="0" transform="translate(162.618,-299.472)">
+			<title>动态连接线.32</title>
+			<path d="M7.09 536.76 L7.09 566.53" class="st17"/>
+		</g>
+		<g id="shape33-165" v:mID="33" v:groupContext="shape" v:layerMember="0" transform="translate(213.203,-256.532)">
+			<title>动态连接线.33</title>
+			<path d="M3.62 536.76 L10.56 536.76 L10.56 552.22" class="st19"/>
+		</g>
+		<g id="shape34-170" v:mID="34" v:groupContext="shape" v:layerMember="0" transform="translate(230.792,-221.229)">
+			<title>动态连接线.34</title>
+			<path d="M-7.03 538.15 L-7.03 544.23 L-7.14 544.23 L-7.14 544.44" class="st19"/>
+		</g>
+		<g id="shape35-175" v:mID="35" v:groupContext="shape" v:layerMember="0" transform="translate(225.478,-191.44)">
+			<title>动态连接线.35</title>
+			<path d="M-1.83 536.76 L-1.83 566.17 L-7.25 566.17" class="st19"/>
+		</g>
+		<g id="shape36-180" v:mID="36" v:groupContext="shape" v:layerMember="0" transform="translate(169.705,-248.463)">
+			<title>动态连接线.36</title>
+			<path d="M0 536.76 L0 554.12 L-22.45 554.12 L-22.45 571.68" class="st17"/>
+		</g>
+		<g id="shape37-185" v:mID="37" v:groupContext="shape" v:layerMember="0" transform="translate(147.251,-197.109)">
+			<title>动态连接线.37</title>
+			<path d="M0 536.76 L0 549.82 L22.45 549.82 L22.45 562.38" class="st17"/>
+		</g>
+		<g id="shape38-190" v:mID="38" v:groupContext="shape" v:layerMember="0" transform="translate(162.618,-151.105)">
+			<title>动态连接线.38</title>
+			<path d="M7.09 536.76 L7.09 546.7" class="st17"/>
+		</g>
+		<g id="shape39-195" v:mID="39" v:groupContext="shape" v:layerMember="0" transform="translate(162.618,-119.055)">
+			<title>动态连接线.39</title>
+			<path d="M7.09 536.76 L7.09 546.27" class="st17"/>
+		</g>
+		<g id="shape40-200" v:mID="40" v:groupContext="shape" v:layerMember="0" transform="translate(136.355,-480.756)">
+			<title>动态连接线.40</title>
+			<path d="M0 536.76 L-78.81 536.76 L-78.81 572.52" class="st17"/>
+		</g>
+		<g id="shape41-205" v:mID="41" v:groupContext="shape" v:layerMember="0" transform="translate(50.4558,-428.052)">
+			<title>动态连接线.41</title>
+			<path d="M7.09 536.76 L7.09 637.17" class="st17"/>
+		</g>
+		<g id="shape42-210" v:mID="42" v:groupContext="shape" v:layerMember="0" transform="translate(50.4558,-299.869)">
+			<title>动态连接线.42</title>
+			<path d="M7.09 536.76 L7.09 563.66" class="st17"/>
+		</g>
+		<g id="shape43-215" v:mID="43" v:groupContext="shape" v:layerMember="0" transform="translate(57.5424,-251.372)">
+			<title>动态连接线.43</title>
+			<path d="M0 536.76 L0 691.75 L59.95 691.75" class="st17"/>
+		</g>
+		<g id="shape44-220" v:mID="44" v:groupContext="shape" v:layerMember="0" transform="translate(288.921,-469.417)">
+			<title>动态连接线.44</title>
+			<path d="M7.09 536.76 L7.09 599.08" class="st17"/>
+		</g>
+		<g id="shape45-225" v:mID="45" v:groupContext="shape" v:layerMember="0" transform="translate(288.921,-386.409)">
+			<title>动态连接线.45</title>
+			<path d="M7.09 536.76 L7.09 595.92" class="st17"/>
+		</g>
+		<g id="shape46-230" v:mID="46" v:groupContext="shape" v:layerMember="0" transform="translate(288.921,-299.472)">
+			<title>动态连接线.46</title>
+			<path d="M7.09 536.76 L7.09 568.56" class="st17"/>
+		</g>
+		<g id="shape47-235" v:mID="47" v:groupContext="shape" v:layerMember="0" transform="translate(295.866,-251.036)">
+			<title>动态连接线.47</title>
+			<path d="M0 536.76 L0 632.23 L-77.64 632.23" class="st17"/>
+		</g>
+		<g id="shape48-240" v:mID="48" v:groupContext="shape" transform="translate(92.8822,-52.4407)">
+			<title>矩形.48</title>
+			<desc>敌方六车坐标</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="29.8964" cy="530.795" width="59.8" height="11.9291"/>
+			<rect x="0" y="524.831" width="59.7929" height="11.9291" rx="5.66929" ry="5.66929" class="st8"/>
+			<text x="11.9" y="532.66" class="st9" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>敌方六车坐标</text>		</g>
+		<g id="shape49-243" v:mID="49" v:groupContext="shape" transform="translate(92.8822,-31.1809)">
+			<title>矩形.49</title>
+			<desc>裁判系统</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="29.8964" cy="531.591" width="59.8" height="10.3381"/>
+			<rect x="0" y="526.422" width="59.7929" height="10.3381" rx="5.16906" ry="5.16906" class="st8"/>
+			<text x="17.9" y="533.46" class="st9" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>裁判系统</text>		</g>
+		<g id="shape52-246" v:mID="52" v:groupContext="shape" transform="translate(183.63,-52.4407)">
+			<title>矩形.52</title>
+			<desc>类别ID 与赛场(X,Y)坐标</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="40.0018" cy="530.795" width="80.01" height="11.9291"/>
+			<rect x="0" y="524.831" width="80.0037" height="11.9291" rx="5.66929" ry="5.66929" class="st8"/>
+			<text x="8.01" y="532.66" class="st9" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/><tspan class="st20">类别</tspan><tspan
+						class="st21" v:langID="1033">ID</tspan><tspan class="st10" v:langID="1033"> </tspan>与<tspan class="st20">赛场</tspan><tspan
+						class="st21">(X,Y)</tspan><tspan class="st20">坐标</tspan></text>		</g>
+		<g id="shape54-255" v:mID="54" v:groupContext="shape" transform="translate(193.735,-31.1809)">
+			<title>矩形.54</title>
+			<desc>地图位置与轨迹</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="29.8964" cy="531.591" width="59.8" height="10.3381"/>
+			<rect x="0" y="526.422" width="59.7929" height="10.3381" rx="5.16906" ry="5.16906" class="st8"/>
+			<text x="8.9" y="533.46" class="st9" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>地图位置与轨迹</text>		</g>
+		<g id="shape56-258" v:mID="56" v:groupContext="shape" v:layerMember="0" transform="translate(180.206,-88.3083)">
+			<title>动态连接线.56</title>
+			<path d="M0 536.76 L0 548.28 L43.43 548.28 L43.43 555.6" class="st17"/>
+		</g>
+		<g id="shape57-263" v:mID="57" v:groupContext="shape" v:layerMember="0" transform="translate(159.487,-88.3083)">
+			<title>动态连接线.57</title>
+			<path d="M0 536.76 L0 548.53 L-36.71 548.53 L-36.71 555.6" class="st17"/>
+		</g>
+		<g id="shape58-268" v:mID="58" v:groupContext="shape" v:layerMember="0" transform="translate(115.692,-54.0665)">
+			<title>动态连接线.58</title>
+			<path d="M7.09 538.39 L7.09 544.21" class="st17"/>
+		</g>
+		<g id="shape59-273" v:mID="59" v:groupContext="shape" v:layerMember="0" transform="translate(216.545,-54.0665)">
+			<title>动态连接线.59</title>
+			<path d="M7.09 538.39 L7.09 544.21" class="st17"/>
+		</g>
+		<g id="shape65-278" v:mID="65" v:groupContext="shape" transform="translate(183.995,-494.204)">
+			<title>工作表.65</title>
+			<desc>设备输入采集层</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="47.0877" cy="529.028" width="94.18" height="15.4646"/>
+			<rect x="0" y="521.295" width="94.1753" height="15.4646" class="st22"/>
+			<text x="19.06" y="531.43" class="st23" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>设备输入采集层</text>		</g>
+		<g id="shape70-281" v:mID="70" v:groupContext="shape" transform="translate(47.2537,-322.998)">
+			<title>工作表.70</title>
+			<desc>相机与世界坐标系变换</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalText="true"/>
+			<v:textRect cx="3.86239" cy="482.794" width="7.73" height="107.931"/>
+			<rect x="0" y="428.829" width="7.72478" height="107.931" class="st22"/>
+			<text x="3.86" y="444.48" writing-mode="tb-rl" class="st24" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>相机与世界坐标系变换</text>		</g>
+		<g id="shape72-284" v:mID="72" v:groupContext="shape" transform="translate(233.684,-298.11)">
+			<title>工作表.72</title>
+			<desc>视觉检测与深度生成</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalText="true"/>
+			<v:textRect cx="9.38995" cy="478.277" width="18.78" height="116.967"/>
+			<rect x="0" y="419.793" width="18.7799" height="116.967" class="st22"/>
+			<text x="9.39" y="432.3" writing-mode="tb-rl" class="st23" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>视觉检测与深度生成</text>		</g>
+		<g id="shape74-287" v:mID="74" v:groupContext="shape" transform="translate(157.099,-266.623)">
+			<title>工作表.74</title>
+			<desc>类别筛选与跟踪</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="47.0877" cy="529.028" width="94.18" height="15.4646"/>
+			<rect x="0" y="521.295" width="94.1753" height="15.4646" class="st22"/>
+			<text x="19.06" y="531.43" class="st23" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>类别筛选与跟踪</text>		</g>
+		<g id="shape76-290" v:mID="76" v:groupContext="shape" transform="translate(228.891,-82.0378)">
+			<title>工作表.76</title>
+			<desc>深度融合与赛场定位</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalText="true"/>
+			<v:textRect cx="7.02471" cy="498.275" width="14.05" height="76.9699"/>
+			<rect x="0" y="459.79" width="14.0494" height="76.9699" class="st22"/>
+			<text x="7.02" y="463.8" writing-mode="tb-rl" class="st24" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>深度融合与赛场定位</text>		</g>
+		<g id="shape78-293" v:mID="78" v:groupContext="shape" transform="translate(139.075,-41.5155)">
+			<title>工作表.78</title>
+			<desc>位置发布与应用</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="33.2328" cy="531.983" width="66.47" height="9.55442"/>
+			<rect x="0" y="527.206" width="66.4656" height="9.55442" class="st22"/>
+			<text x="8.71" y="534.08" class="st25" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>位置发布与应用</text>		</g>
+		<g id="shape80-296" v:mID="80" v:groupContext="shape" transform="translate(296.008,-162.775)">
+			<title>工作表.80</title>
+			<desc>深度赋值</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalText="true"/>
+			<v:textRect cx="7.02471" cy="498.275" width="14.05" height="76.9699"/>
+			<rect x="0" y="459.79" width="14.0494" height="76.9699" class="st22"/>
+			<text x="7.02" y="482.95" writing-mode="tb-rl" class="st24" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>深度赋值</text>		</g>
+	</g>
+</svg>
