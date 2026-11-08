@@ -25,7 +25,7 @@
     快速开始 •
     硬件介绍 •
     许可证 •
-    联系与支持
+    联系与支持 
   </p>
 </div>
 
@@ -333,7 +333,7 @@ LiDAR-2025/
 
 ## 技术介绍
 
-
+本文仅对项目的整体架构、核心功能及实现流程进行简要介绍。有关各模块的设计原理、算法实现、参数配置及通信协议等详细技术内容，请参阅 [项目 Wiki](https://github.com/BreCaspian/ROBOMASTER-HORIZON-LiDAR-2025/wiki)。
 
 ## 多目标跟踪系统
 
@@ -343,6 +343,17 @@ ByteTracker作为该方案多目标跟踪的核心算法，通过级联匹配策
 相较于原方案DeepSORT跟踪算法，ByteTracker采用BYTE关联策略，同时处理高分数和低分数检测框，能够有效处理遮挡情况下的目标跟踪，减少ID切换频率，提供更稳定的跟踪结果并且无需额外的特征提取网络，仅几何运算，计算开销显著降低。
 
 DeepSort追踪是实验性分支。它在装甲板 ROI 之前跟踪车辆，使用TensorRT生成256维外观向量，通过余弦距离、卡尔曼门控与级联分配关联，再对候选做IoU补配。启用时请提前置入额外的特征模型。（完全启用DeepSort将会极大消耗计算资源！！！）
+
+
+<p align="center">
+  <img
+    width="1422"
+    height="835"
+    alt="image"
+    src="https://github.com/user-attachments/assets/a084613c-3f07-4c01-a816-085c627a691d"
+  />
+</p>
+
 
 - **多级关联匹配策略**：
   ByteTracker采用三层级联匹配架构，将检测结果按置信度分层处理：
@@ -438,6 +449,15 @@ frame_rate: 60            # 适应更高帧率（如果硬件支持）
 同时也实现并提供 voxel_grid 体素栅格采样、random 随机采样和 uniform 均匀采样 方便按需使用。
 
 （实验证明使用降采样方法后定位坐标值抖动较大，特别是Z轴，分析认为是由于降采样使点云过于稀疏导致聚类结果不佳造成的）
+
+
+
+
+
+<p align="center">
+  <img src="Docs/Point_Cloud_Processing_Methods.svg" alt="aPoint_Cloud_Processing_Methods" width="80%"><br>
+</p>
+
 
 ### 多线程并行架构
 - 数据分块按点云的输入顺序进行。程序根据 CPU 报告的硬件线程数估算块大小，计算时使用的线程数参考值限制在 2–16，每块最多 100,000 点。每个数据块创建一个工作线程，实际线程数由块数决定。
