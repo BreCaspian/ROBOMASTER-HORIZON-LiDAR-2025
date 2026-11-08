@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- 由 Microsoft Visio, SVG Export 生成 fig.svg Page-1 -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="3.87118in" height="4.98928in"
+		viewBox="0 0 278.725 359.228" xml:space="preserve" color-interpolation-filters="sRGB" class="st15">
+	<v:documentProperties v:langID="2052" v:metric="true" v:viewMarkup="false">
+		<v:userDefs>
+			<v:ud v:nameU="msvNoAutoConnect" v:val="VT0(1):26"/>
+		</v:userDefs>
+	</v:documentProperties>
+
+	<style type="text/css">
+	<![CDATA[
+		.st1 {fill:none;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st2 {fill:#000000;font-family:楷体;font-size:0.499992em}
+		.st3 {fill:#ddd6e5;stroke:#0070c0;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.8}
+		.st4 {fill:#000000;font-family:Times New Roman;font-size:0.833336em}
+		.st5 {fill:#66ccff;stroke:#0070c0;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.8}
+		.st6 {fill:#d7e3bf;stroke:#0070c0;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.8}
+		.st7 {fill:#000000;font-family:华文行楷;font-size:0.833336em}
+		.st8 {fill:#fff2cc;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st9 {fill:#dbeef3;stroke:#0070c0;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.8}
+		.st10 {font-size:1em}
+		.st11 {font-family:Times New Roman;font-size:1em}
+		.st12 {fill:#b7dde8;stroke:#0070c0;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.8}
+		.st13 {marker-end:url(#mrkr4-45);stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st14 {fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:0.29411764705882}
+		.st15 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<defs id="Markers">
+		<g id="lend4">
+			<path d="M 2 1 L 0 0 L 2 -1 L 2 1 " style="stroke:none"/>
+		</g>
+		<marker id="mrkr4-45" class="st14" v:arrowType="4" v:arrowSize="1" v:setback="6.8" refX="-6.8" orient="auto"
+				markerUnits="strokeWidth" overflow="visible">
+			<use xlink:href="#lend4" transform="scale(-3.4,-3.4) "/>
+		</marker>
+	</defs>
+	<g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+		<title>页-1</title>
+		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="8.50394"
+				v:shadowOffsetY="-8.50394"/>
+		<v:layer v:name="连接线" v:index="0"/>
+		<g id="group38-1" transform="translate(18.4,-18.4)" v:mID="38" v:groupContext="group">
+			<title>工作表.38</title>
+			<g id="shape13-2" v:mID="13" v:groupContext="shape" transform="translate(170.733,-199.628)">
+				<title>工作表.13</title>
+				<desc>是</desc>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="22.6563" cy="355.296" width="45.32" height="7.86429"/>
+				<rect x="0" y="351.364" width="45.3126" height="7.86429" class="st1"/>
+				<text x="19.66" y="357.27" class="st2" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>是</text>			</g>
+			<g id="shape16-5" v:mID="16" v:groupContext="shape" transform="translate(64.7593,-305.927)">
+				<title>矩形.16</title>
+				<desc>PointCloud2 /cloudpoints</desc>
+				<v:userDefs>
+					<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				</v:userDefs>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="56.6929" cy="350.978" width="113.39" height="16.5017"/>
+				<rect x="0" y="342.727" width="113.386" height="16.5017" rx="5.66929" ry="5.66929" class="st3"/>
+				<text x="5.44" y="353.99" class="st4" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>PointCloud2 /cloudpoints</text>			</g>
+			<g id="shape17-8" v:mID="17" v:groupContext="shape" transform="translate(81.986,-268.165)">
+				<title>矩形.17</title>
+				<desc>PCL PointXYZ</desc>
+				<v:userDefs>
+					<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				</v:userDefs>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="39.4663" cy="350.978" width="78.94" height="16.5017"/>
+				<rect x="0" y="342.727" width="78.9326" height="16.5017" rx="5.66929" ry="5.66929" class="st5"/>
+				<text x="8.21" y="353.98" class="st4" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>PCL PointXYZ</text>			</g>
+			<g id="shape18-11" v:mID="18" v:groupContext="shape" transform="translate(76.2132,-235.061)">
+				<title>矩形.18</title>
+				<desc>可选降采样</desc>
+				<v:userDefs>
+					<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				</v:userDefs>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="45.2391" cy="350.978" width="90.48" height="16.5017"/>
+				<rect x="0" y="342.727" width="90.4781" height="16.5017" rx="5.66929" ry="5.66929" class="st6"/>
+				<text x="20.24" y="354.09" class="st7" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>可选降采样</text>			</g>
+			<g id="shape19-14" v:mID="19" v:groupContext="shape" transform="translate(73.405,-185.454)">
+				<title>菱形</title>
+				<desc>点数 &#62; 500000</desc>
+				<v:userDefs>
+					<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
+				</v:userDefs>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="48.0472" cy="345.075" width="96.1" height="28.3065"/>
+				<path d="M48.05 359.23 L96.09 345.08 L48.05 330.92 L0 345.08 L48.05 359.23 Z" class="st8"/>
+				<text x="19.19" y="348.08" class="st7" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>点数 &#62; 500000</text>			</g>
+			<g id="shape20-17" v:mID="20" v:groupContext="shape" transform="translate(0,-137.318)">
+				<title>矩形.20</title>
+				<desc>单线程投影</desc>
+				<v:userDefs>
+					<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				</v:userDefs>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="39.4663" cy="345.81" width="78.94" height="26.8364"/>
+				<rect x="0" y="332.392" width="78.9326" height="26.8364" rx="5.66929" ry="5.66929" class="st9"/>
+				<text x="14.47" y="348.92" class="st7" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>单线程投影</text>			</g>
+			<g id="shape21-20" v:mID="21" v:groupContext="shape" transform="translate(162.992,-137.318)">
+				<title>矩形.21</title>
+				<desc>连续索引分块各块投影后合并</desc>
+				<v:userDefs>
+					<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				</v:userDefs>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="39.4663" cy="345.81" width="78.94" height="26.8364"/>
+				<rect x="0" y="332.392" width="78.9326" height="26.8364" rx="5.66929" ry="5.66929" class="st9"/>
+				<text x="4.47" y="342.59" class="st7" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>连续索引分块，<tspan
+							x="4.47" dy="1.234em" class="st10">各块投影后合并</tspan></text>			</g>
+			<g id="shape22-24" v:mID="22" v:groupContext="shape" transform="translate(60.5338,-93.98)">
+				<title>矩形.22</title>
+				<desc>像素深度取较小正 Z</desc>
+				<v:userDefs>
+					<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				</v:userDefs>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="61.5383" cy="350.978" width="123.08" height="16.5017"/>
+				<rect x="0" y="342.727" width="123.077" height="16.5017" rx="5.66929" ry="5.66929" class="st6"/>
+				<text x="17.23" y="354.09" class="st7" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>像素深度取较小正<tspan
+							class="st11"> </tspan><tspan class="st11" v:langID="1033">Z</tspan></text>			</g>
+			<g id="shape23-29" v:mID="23" v:groupContext="shape" transform="translate(56.3083,-62.6534)">
+				<title>矩形.23</title>
+				<desc>记录投影像素 · 淘汰旧条目</desc>
+				<v:userDefs>
+					<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				</v:userDefs>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="65.7638" cy="350.978" width="131.53" height="16.5017"/>
+				<rect x="0" y="342.727" width="131.528" height="16.5017" rx="5.66929" ry="5.66929" class="st6"/>
+				<text x="6.6" y="354.09" class="st7" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>记录投影像素<tspan
+							class="st11"> </tspan><tspan class="st11">· </tspan>淘汰旧条目</text>			</g>
+			<g id="shape24-34" v:mID="24" v:groupContext="shape" transform="translate(76.8331,-31.3267)">
+				<title>矩形.24</title>
+				<desc>publicDepth</desc>
+				<v:userDefs>
+					<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				</v:userDefs>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="45.2391" cy="350.978" width="90.48" height="16.5017"/>
+				<rect x="0" y="342.727" width="90.4781" height="16.5017" rx="5.66929" ry="5.66929" class="st12"/>
+				<text x="20.52" y="353.98" class="st4" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>publicDepth</text>			</g>
+			<g id="shape25-37" v:mID="25" v:groupContext="shape" transform="translate(60.5338,-5.68434E-14)">
+				<title>矩形.25</title>
+				<desc>按装甲板框取深度</desc>
+				<v:userDefs>
+					<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				</v:userDefs>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="61.5383" cy="350.978" width="123.08" height="16.5017"/>
+				<rect x="0" y="342.727" width="123.077" height="16.5017" rx="5.66929" ry="5.66929" class="st3"/>
+				<text x="21.54" y="354.09" class="st7" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>按装甲板框取深度</text>			</g>
+			<g id="shape26-40" v:mID="26" v:groupContext="shape" transform="translate(480.681,53.3017) rotate(90)">
+				<title>工作表.26</title>
+				<path d="M0 359.23 L16.16 359.23" class="st13"/>
+			</g>
+			<g id="shape27-46" v:mID="27" v:groupContext="shape" transform="translate(480.681,91.0633) rotate(90)">
+				<title>工作表.27</title>
+				<path d="M0 359.23 L11.5 359.23" class="st13"/>
+			</g>
+			<g id="shape28-51" v:mID="28" v:groupContext="shape" transform="translate(480.681,124.168) rotate(90)">
+				<title>工作表.28</title>
+				<path d="M0 359.23 L16.2 359.23" class="st13"/>
+			</g>
+			<g id="shape30-56" v:mID="30" v:groupContext="shape" v:layerMember="0" transform="translate(73.405,-199.608)">
+				<title>动态连接线.40</title>
+				<path d="M0 359.23 L-33.94 359.23 L-33.94 389.58" class="st13"/>
+			</g>
+			<g id="shape31-61" v:mID="31" v:groupContext="shape" v:layerMember="0" transform="translate(169.5,-199.608)">
+				<title>动态连接线.31</title>
+				<path d="M0 359.23 L32.96 359.23 L32.96 389.58" class="st13"/>
+			</g>
+			<g id="shape32-66" v:mID="32" v:groupContext="shape" v:layerMember="0" transform="translate(39.4663,-137.318)">
+				<title>动态连接线.32</title>
+				<path d="M0 359.23 L0 394.32 L15.97 394.32" class="st13"/>
+			</g>
+			<g id="shape33-71" v:mID="33" v:groupContext="shape" v:layerMember="0" transform="translate(202.458,-137.318)">
+				<title>动态连接线.33</title>
+				<path d="M0 359.23 L0 394.32 L-13.75 394.32" class="st13"/>
+			</g>
+			<g id="shape34-76" v:mID="34" v:groupContext="shape" transform="translate(26.8585,-199.628)">
+				<title>工作表.34</title>
+				<desc>否</desc>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="22.6563" cy="355.296" width="45.32" height="7.86429"/>
+				<rect x="0" y="351.364" width="45.3126" height="7.86429" class="st1"/>
+				<text x="19.66" y="357.27" class="st2" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>否</text>			</g>
+			<g id="shape35-79" v:mID="35" v:groupContext="shape" transform="translate(481.301,265.248) rotate(90)">
+				<title>工作表.35</title>
+				<path d="M0 359.23 L9.72 359.23" class="st13"/>
+			</g>
+			<g id="shape36-84" v:mID="36" v:groupContext="shape" transform="translate(481.301,296.575) rotate(90)">
+				<title>工作表.36</title>
+				<path d="M0 359.23 L9.72 359.23" class="st13"/>
+			</g>
+			<g id="shape37-89" v:mID="37" v:groupContext="shape" transform="translate(481.301,327.902) rotate(90)">
+				<title>工作表.37</title>
+				<path d="M0 359.23 L9.72 359.23" class="st13"/>
+			</g>
+		</g>
+	</g>
+</svg>
